@@ -8,7 +8,8 @@
     --dark-color: #303030;
     --free-color: transparent;
     --services-bg-color: #111319;
-    --benefit-bg-color: #f7f7f7;
+    --barbers-bg-color: #f7f7f7;
+    --contacts-bg-color: #191C26;
 }
 
 body {
@@ -179,10 +180,6 @@ body {
 
 /* Benefits */
 
-.benefit {
-    color: var(--benefit-bg-color);
-}
-
 .benefits-number {
     font-weight: 700;
     font-size: 42px;
@@ -207,3 +204,81 @@ body {
     text-align: center;
     color: var(--dark-color);
 }
+
+/* Our barbers */
+
+.our-barbers {
+    color: var(--barbers-bg-color);
+}
+
+.barber-name {
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+}
+
+.prof {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--hover-color);
+}
+
+.socials {list-style: none;
+    padding: 0;
+    margin: 0;}
+
+/* Gallery */
+
+.gallery-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* contacts */
+
+.form {background-color: var(--contacts-bg-color);}
+
+.contacts {background-color: var(--contacts-bg-color);
+background-image: url(../image/bg.svg);
+background-repeat: no-repeat;}
+
+.contact {font-style: normal;
+font-size: 18px;
+line-height: calc(30 / 18);
+letter-spacing: 0.02em;
+color: var(--text-light-color);
+text-decoration: none;}
+
+.hours-title {
+    font-weight: 600;
+font-size: 11px;
+line-height: calc(15 / 11);
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--main-color);
+}
+
+.contact:hover,
+.contact:focus {color: var(--hover-color);}
+
+/* Footer */
+
+.copyright {
+    font-weight: 600;
+font-size: 11px;
+line-height: calc(15 /11);
+letter-spacing: 0.2em;
+color: var(--text-light-color);}
+
