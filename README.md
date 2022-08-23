@@ -1,2 +1,2 @@
 # barbershop
-https://www.figma.com/file/q8auLNKV6clQPjhm2q2HBW/Barbershop-(EN)-(Copy)
+https://www.figma.com/file/Kpu7c2mmNWyJZJHFfUvdQ7/Barbershop-EN-(Copy)
