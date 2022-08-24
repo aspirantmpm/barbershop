@@ -17,6 +17,26 @@ body {
     font-family: 'Open Sans';
 }
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding: 0 15px;
+    display: flex;
+}
+
+.section {
+    padding-bottom: 130px;
+    padding-top: 130px;
+}
+
 .btn,
 .btn-light,
 .btn-dark {
@@ -114,6 +134,31 @@ body {
 
 /* About */
 
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.info-block {
+    padding: 0 64px;
+}
+
+.line {
+    margin-right: 20px;
+    margin-top: 7.5px;
+}
+
+.up-block {
+    display: flex;
+    padding-bottom: 20px;
+}
+
 .uppertitle {
     font-weight: 600;
     font-size: 11px;
@@ -130,6 +175,7 @@ body {
     font-size: 42px;
     line-height: calc(49 / 42);
     letter-spacing: 0.05em;
+    padding-bottom: 20px;
 }
 
 .title-dark {
@@ -145,6 +191,7 @@ body {
     line-height: calc(30 / 18);
     letter-spacing: 0.02em;
     color: var(--text-dark-color);
+    padding-bottom: 20px;
 }
 
 .text-about {
@@ -152,6 +199,7 @@ body {
     line-height: calc(26 / 14);
     letter-spacing: 0.02em;
     color: var(--text-dark-color);
+    padding-bottom: 40px;
 }
 
 /* Services and prices */
@@ -227,58 +275,74 @@ body {
     color: var(--hover-color);
 }
 
-.socials {list-style: none;
+.socials {
+    list-style: none;
     padding: 0;
-    margin: 0;}
+    margin: 0;
+}
 
 /* Gallery */
 
 .gallery-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* contacts */
 
-.form {background-color: var(--contacts-bg-color);}
+.form {
+    background-color: var(--contacts-bg-color);
+}
 
-.contacts {background-color: var(--contacts-bg-color);
-background-image: url(../image/bg.svg);
-background-repeat: no-repeat;}
+.contacts {
+    background-color: var(--contacts-bg-color);
+    background-image: url(../image/bg.svg);
+    background-repeat: no-repeat;
+}
 
-.contact {font-style: normal;
-font-size: 18px;
-line-height: calc(30 / 18);
-letter-spacing: 0.02em;
-color: var(--text-light-color);
-text-decoration: none;}
+.contact {
+    font-style: normal;
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: var(--text-light-color);
+    text-decoration: none;
+}
 
 .hours-title {
     font-weight: 600;
-font-size: 11px;
-line-height: calc(15 / 11);
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: var(--main-color);
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--main-color);
 }
 
 .contact:hover,
-.contact:focus {color: var(--hover-color);}
+.contact:focus {
+    color: var(--hover-color);
+}
 
 /* Footer */
 
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;}
+
+  .up-block-footer {display: flex; margin-left: auto;}
+
 .copyright {
     font-weight: 600;
-font-size: 11px;
-line-height: calc(15 /11);
-letter-spacing: 0.2em;
-color: var(--text-light-color);}
-
+    font-size: 11px;
+    line-height: calc(15 /11);
+    letter-spacing: 0.2em;
+    color: var(--text-light-color);
+}
