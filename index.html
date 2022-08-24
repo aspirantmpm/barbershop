@@ -37,7 +37,7 @@
           </div>
         </header>
         <div class="group">
-          <ul class="list">
+          <ul class="link-list">
             <li class="list-item">
               <a class="link" href="https://Instagram.com" target="_blank" rel="noopener noreferrer"
                 >Instagram</a
@@ -75,7 +75,7 @@
     <section class="section">
       <div class="container">
         <div class="about-photo">
-          <ul class="list">
+          <ul class="list-about">
             <li class="list-item"><img src="./image/about/about1.jpg" alt="Front shave" /></li>
             <li class="list-item"><img src="./image/about/about2.jpg" alt="Back shave" /></li>
           </ul>
@@ -324,66 +324,70 @@
     </section>
 
     <!-- contacts -->
-    <section class="section" id="contacts">
+    <div class="double-section">
       <div class="container">
-        <div class="form">
-          <h2 class="title-light">Online-booking</h2>
+        <section class="section form-cont" id="contacts">
+          <div class="form">
+            <h2 class="title-light">Online-booking</h2>
 
-          <button class="btn-light" type="button">send</button>
-        </div>
-        <div class="contacts">
-          <h2 class="title-light">Contacts</h2>
-          <address class="contacts-adress">
-            <ul class="list">
-              <li class="list-item">
-                <a
-                  class="contact"
-                  href="https://goo.gl/maps/r24npt5XV5TZUg2dA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >st. Vasilkovaya,<br />7A Kiev, 08132</a
-                >
-              </li>
-              <li class="list-item">
-                <a class="contact" href="barbershop@email.com">barbershop@email.com</a>
-              </li>
-              <li class="list-item">
-                <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-          <div class="up-block">
-          <svg class="line" width="60" height="0" style="outline: 1px solid #9DA4BD">
-            <line x1="0" y1="0" x2="60" y2="0" stroke="#303030" stroke-width="1" />
-          </svg>
-          <p class="hours-title">working hours</p>
+            <button class="btn-light" type="button">send</button>
           </div>
-          <p class="contact">Every day from <time>9:00</time> to <time>22:00</time></p>
-        </div>
+        </section>
+        <section>
+          <div class="contacts">
+            <h2 class="title-light">Contacts</h2>
+            <address class="contacts-adress">
+              <ul class="contact-list">
+                <li class="contact-list-item">
+                  <a
+                    class="contact"
+                    href="https://goo.gl/maps/r24npt5XV5TZUg2dA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >st. Vasilkovaya,<br />7A Kiev, 08132</a
+                  >
+                </li>
+                <li class="contact-list-item">
+                  <a class="contact" href="barbershop@email.com">barbershop@email.com</a>
+                </li>
+                <li class="contact-list-item">
+                  <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+            <div class="up-block">
+              <svg class="line" width="60" height="0" style="outline: 1px solid #9da4bd">
+                <line x1="0" y1="0" x2="60" y2="0" stroke="#303030" stroke-width="1" />
+              </svg>
+              <p class="hours-title">working hours</p>
+            </div>
+            <p class="contact">Every day from <time>9:00</time> to <time>22:00</time></p>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
 
     <footer class="footer">
       <div class="container">
         <p class="copyright">&#xa9; Copyright 2020</p>
-      <div class="up-block-footer">
-        <svg class="line" width="60" height="0" style="outline: 1px solid #303030">
-          <line x1="0" y1="0" x2="60" y2="0" stroke="#303030" stroke-width="1" />
-        </svg>      
-      <ul class="list">        
-        <li class="list-item">
-          <a class="link" href="https://Instagram.com" target="_blank" rel="noopener noreferrer"
-            >Instagram</a
-          >
-        </li>
-        <li class="list-item">
-          <a class="link" href="https://Youtube.com" target="_blank" rel="noopener noreferrer"
-            >Youtube</a
-          >
-        </li>
-      </ul>
+        <div class="up-block-footer">
+          <svg class="line" width="60" height="0" style="outline: 1px solid #303030">
+            <line x1="0" y1="0" x2="60" y2="0" stroke="#303030" stroke-width="1" />
+          </svg>
+          <ul class="link-list">
+            <li class="list-item">
+              <a class="link" href="https://Instagram.com" target="_blank" rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="list-item">
+              <a class="link" href="https://Youtube.com" target="_blank" rel="noopener noreferrer"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      </div>      
     </footer>
   </body>
 </html>
