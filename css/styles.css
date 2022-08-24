@@ -69,8 +69,6 @@ p {
     color: var(--main-color);
 }
 
-
-
 /* Hero and Header */
 
 .header-link {
@@ -262,7 +260,9 @@ p {
 }
 
 .btn-light {
-    display: inline-flex;
+    display: flex;
+    /* display: block; */
+    /* display: inline-flex; */
     /* display: inline-block; */
     /* text-align: center; */
     /* justify-content: center; */
