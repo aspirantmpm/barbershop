@@ -260,11 +260,11 @@ p {
 }
 
 .btn-light {
-    display: flex;
+    /* display: flex; */
     /* display: block; */
     /* display: inline-flex; */
     /* display: inline-block; */
-    /* text-align: center; */
+    text-align: center;
     /* justify-content: center; */
    }
 
