@@ -29,7 +29,7 @@ p {
     margin-right: auto;
     width: 1200px;
     padding: 0 15px;
-    }
+}
 
 .section {
     padding-bottom: 130px;
@@ -143,8 +143,6 @@ p {
 
 /* About */
 
-
-
 .list-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -210,35 +208,116 @@ p {
 
 /* Services and prices */
 
-.services-prices {
+.serv-img {
     background-color: var(--services-bg-color);
+}
+
+.services-prices {
     background-image: url(../image/prices.svg);
     background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
 }
 
 .uppertitle-dark {
     color: var(--uppertitle-dark);
 }
 
-.list.services,
-.list.prices {
+.left-list,
+.right-list {
     font-size: 18px;
     line-height: calc(30 / 18);
     letter-spacing: 0.02em;
     color: var(--text-light-color);
+    list-style: none;
+    padding: 30px 40px;
+    margin: 0;
+    width: 585px;
+}
+
+.line2 {
+    margin-top: 25px;
+    margin-right: 6px;
+    margin-left: auto;
+    display: inline-block;
+}
+
+.left-list {
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.right-list {
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.service {
+    display: inline-flex;
+    text-align: justify;
 }
 
 .price {
-    text-align: right;
+    display: flex;
+    margin-bottom: 50px;
 }
 
+.btn-light {
+    display: inline-flex;
+    /* display: inline-block; */
+    /* text-align: center; */
+    /* justify-content: center; */
+   }
+
 /* Benefits */
+
+.benefits {
+    display: flex;
+}
+
+.infograf {
+    margin-left: 100px;
+    margin-right: 130px;
+    width: 370px;
+}
+
+.number {
+    flex-wrap: wrap;
+}
+
+.benefit {
+    width: 170px;
+    text-align: center;
+    background-color: var(--barbers-bg-color);
+}
+
+.benefit {
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 19px;
+    padding-left: 24px;
+}
+
+.benefit:nth-child(2n) {
+
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.benefit:nth-child(2n + 1) {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.old-school {
+    width: 500px;
+    margin-right: 70px;
+}
 
 .benefits-number {
     font-weight: 700;
     font-size: 42px;
     line-height: calc(57 / 42);
-    text-align: center;
     letter-spacing: 0.05em;
     color: var(--dark-color);
 }
@@ -247,15 +326,14 @@ p {
     font-weight: 600;
     font-size: 16px;
     line-height: calc(22 / 16);
-    text-align: center;
     color: var(--hover-color);
+    vertical-align: 10px;
 }
 
 .benefits-item {
     font-weight: 600;
     font-size: 11px;
     line-height: calc(15 / 11);
-    text-align: center;
     color: var(--dark-color);
 }
 
@@ -265,10 +343,14 @@ p {
     color: var(--barbers-bg-color);
 }
 
-.barber-card:not(:last-child) {margin-right: 30px;}
+.barber-card:not(:last-child) {
+    margin-right: 30px;
+}
 
-.card-title {padding-top: 30px;
-padding-bottom: 30px;}
+.card-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .barber-name {
     font-size: 18px;
@@ -291,11 +373,12 @@ padding-bottom: 30px;}
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+}
 
 .socials-item:not(:last-child) {
-  margin-right: 10px; 
-   
+    margin-right: 10px;
+
 }
 
 /* Gallery */
@@ -319,12 +402,14 @@ padding-bottom: 30px;}
     background-color: var(--contacts-bg-color);
 }
 
-.double {display: flex;}
+.double {
+    display: flex;
+}
 
 .form-cont {
     padding-top: 130px;
-  padding-bottom: 130px;
-  width: 585px;
+    padding-bottom: 130px;
+    width: 585px;
 }
 
 .contacts {
@@ -349,7 +434,8 @@ padding-bottom: 30px;}
     margin: 0;
     padding-left: 0;
     list-style: none;
-    padding-bottom: 70px;}
+    padding-bottom: 70px;
+}
 
 .contact-list-item:not(:last-child) {
     padding-bottom: 20px;
@@ -372,14 +458,16 @@ padding-bottom: 30px;}
 /* Footer */
 
 .footer {
-  padding-top: 56px;
-  padding-bottom: 56px;
-  display: flex;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    display: flex;
 }
-  
 
-.up-block-footer {display: flex;
-     margin-left: auto;}
+
+.up-block-footer {
+    display: flex;
+    margin-left: auto;
+}
 
 .copyright {
     font-weight: 600;
