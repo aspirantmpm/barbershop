@@ -229,7 +229,8 @@ margin-right: 22px;
     line-height: calk(15 / 11);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--dark-color);    
+    color: var(--dark-color);  
+    padding-bottom: 20px;  
 }
 
 .uppertitle-dark::before {
@@ -248,7 +249,7 @@ margin-right: 22px;
     line-height: calc(85 / 72);
     letter-spacing: 0.05em;
     color: var(--main-color);
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .hero-subtitle {
@@ -303,7 +304,18 @@ margin-right: 22px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--dark-color);
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.uppertitle::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;    
+    background-color: var(--uppertitle-dark);
+    margin-right: 20px;
 }
 
 .title-dark,
@@ -313,15 +325,17 @@ margin-right: 22px;
     font-size: 42px;
     line-height: calc(49 / 42);
     letter-spacing: 0.05em;
-    padding-bottom: 20px;
+    
 }
 
 .title-dark {
     color: var(--dark-color);
+    padding-bottom: 20px;
 }
 
 .title-light {
     color: var(--main-color);
+    padding-bottom: 40px;
 }
 
 .subtitle {
@@ -343,7 +357,7 @@ margin-right: 22px;
 /* Services and prices */
 
 .serv-img {
-    background-color: var(--services-bg-color);
+    background-color: var(--services-bg-color);    
 }
 
 .services-prices {
