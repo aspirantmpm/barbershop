@@ -101,6 +101,46 @@ p {
     background-image: url(../image/slider/slider1.jpg);
     background-repeat: no-repeat;
     background-position: right;
+    overflow: hidden;
+}
+
+.down-group {
+    position: relative;
+    top: 616px;
+    left: 986px;
+    transform: translateX(0);    
+}
+
+.slide-one {
+    position: absolute;
+    top: -616px;
+    left: 0;
+    transform: translateX(50%);
+    pointer-events: none;
+    z-index: -20;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+}
+
+.slide-two {
+     position: absolute;
+    top: -616px;
+    left: 0;
+    transform: translateX(-200%);
+    pointer-events: none;
+    z-index: -1;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: var(--timing-function);
+}
+
+.list-item-back:active .slide-two {
+transform: translateX(-855px);
+}
+
+.list-item-forvard:active .slide-one {
+transform: translateX(-855px);
 }
 
 .bg-img {
@@ -113,16 +153,12 @@ p {
 }
 
 .hero-content {
-    text-align: left;
-    padding-left: 212px;
-    padding-top: 270px;
-    margin-bottom: 142px;
-}
-
-.down-group {
-    justify-content: end;
-
-    gap: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 270px;
+    left: 212px;    
+    z-index: 10;
 }
 
 .btn-slider {
@@ -174,34 +210,6 @@ p {
 .btn-slider:focus::after {
     background-color: var(--hover-color);
 }
-
-/* .screen-one {
-    height: 680px;
-    position: relative;
-    top: 0;
-    left: 115px;
-    transform: translateX(0%);
-} */
-
-/* .screen-two {
-    height: 680px;
-    position: relative;
-    top: 0;
-    left: 100%;
-    transform: translateX(-100%);
-} */
-
-/* .screen-three {
-    height: 680px;
-    position: relative;
-    top: 0;
-    left: 100%;
-    transform: translateX(-200%);
-} */
-
-/* .screen-one:hover {
-transform: translateX(100%);
-} */
 
 .logo {
     position: absolute;
@@ -280,10 +288,6 @@ transform: translateX(100%);
     width: 60px;
     background-color: var(--dark-color);
 }
-
-
-
-
 
 /* ============ */
 
