@@ -691,6 +691,12 @@ transform: translateX(-855px);
     transition-timing-function: var(--timing-function);
 }
 
+.contact:hover, .icon-contacts:hover,
+.contact:focus, .icon-contacts:focus {
+    color: var(--hover-color);
+    stroke: var(--hover-color);
+}
+
 .contact-list {
     margin: 0;
     padding-left: 0;
@@ -723,11 +729,7 @@ transform: translateX(-855px);
     margin-right: 20px;
 }
 
-.contact:hover, .icon-contacts:hover,
-.contact:focus, .icon-contacts:focus {
-    color: var(--hover-color);
-    stroke: var(--hover-color);
-}
+
 
 .icon-contacts {
     margin-top: 3px;
