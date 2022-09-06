@@ -679,6 +679,7 @@ transform: translateX(-855px);
 }
 
 .contact {
+    display: flex;
     font-style: normal;
     font-size: 18px;
     line-height: calc(30 / 18);
@@ -722,16 +723,15 @@ transform: translateX(-855px);
     margin-right: 20px;
 }
 
-.contact:hover,
-.contact:focus,
-.icon-contacts:hover,
-.icon-contacts:focus 
-{ fill: var(--free-color);
+.contact:hover, .icon-contacts:hover,
+.contact:focus, .icon-contacts:focus {
     color: var(--hover-color);
     stroke: var(--hover-color);
 }
 
 .icon-contacts {
+    margin-top: 3px;
+    margin-right: 16px;
     width: 24px;
     height: 24px;
     fill: var(--free-color);
