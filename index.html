@@ -23,7 +23,6 @@
 
     <section>
       <div class="container hero">
-        
         <div class="bg-img">
           <div class="hero-content">
             <p class="uppertitle-dark">A hair salon for men in Kyiv</p>
@@ -34,16 +33,15 @@
             </p>
           </div>
           <ul class="list down-group">
-            <li class="list-item-back">          
-              <img class="slide-two" src="./image/slider/slider3.jpg" alt="">
-              <button class="btn-slider back" type="button">Back</button>               
+            <li class="list-item-back">
+              <img class="slide-two" src="./image/slider/slider3.jpg" alt="" />
+              <button class="btn-slider back" type="button">Back</button>
             </li>
             <li class="list-item-forvard">
-              <img class="slide-one" src="./image/slider/slider2.jpg" alt="">
+              <img class="slide-one" src="./image/slider/slider2.jpg" alt="" />
               <button class="btn-slider forward" type="button">Forward</button>
             </li>
           </ul>
-         
         </div>
         <a class="" href="index.html">
           <svg class="logo">
@@ -357,7 +355,25 @@
         <div class="container">
           <div class="booking">
             <h2 class="title-light">Online-booking</h2>
-            <!-- form -->
+            <div class="name-phone">
+              <div class="form-field">
+                <label class="label" for="username"></label>
+                <input type="text" class="input" name="username" id="username" placeholder="name*"/>
+              </div>
+              <div class="form-field">
+                <label class="label" for="tel"></label>
+                <input type="tel" class="input" name="tel" id="tel" placeholder="phone*"/>                
+              </div>      
+            </div>
+            <div class="form-field">
+            <label class="label" for="comment"></label>
+            <textarea
+              class="input-comment"
+              name="comment"
+              id="comment"
+              placeholder="massege"
+            ></textarea>
+          </div>
             <button class="btn-light-down" type="button">send</button>
           </div>
           <div class="contacts">
@@ -369,16 +385,26 @@
                     class="contact"
                     href="https://goo.gl/maps/r24npt5XV5TZUg2dA"
                     target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                    rel="noopener noreferrer">
+                    <svg class="icon-contacts">
+                      <use href="./image/icons.svg#icon-map-pin"></use>
+                    </svg>
                     st. Vasilkovaya,<br />7A Kiev, 08132
                   </a>
                 </li>
                 <li class="contact-list-item">
-                  <a class="contact" href="barbershop@email.com">barbershop@email.com</a>
+                  <a class="contact" href="barbershop@email.com">
+                    <svg class="icon-contacts">
+                      <use href="./image/icons.svg#icon-mail-footer"></use>
+                    </svg>
+                    barbershop@email.com</a>
                 </li>
                 <li class="contact-list-item">
-                  <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                  <a class="contact" href="tel:+380961111111">
+                    <svg class="icon-contacts">
+                      <use href="./image/icons.svg#icon-phone-footer"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
                 </li>
               </ul>
             </address>
@@ -410,10 +436,55 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close" data-modal-close>
-          <svg class="icon">
+          <svg class="icon-close">
             <use href="./image/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="form-name">Leave your details, we will call you back</p>
+        <form class="modal-form">
+          <div class="form-field-modal">
+            <label class="label" for="username">Name</label>
+            <input type="text" class="input-modal" name="username" id="username" />
+            <svg class="icon-form">
+              <use href="./image/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="form-field-modal">
+            <label class="label" for="tel">Phone</label>
+            <input type="tel" class="input-modal" name="tel" id="tel" />
+            <svg class="icon-form">
+              <use href="./image/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="form-field-modal">
+            <label class="label" for="email">Mail</label>
+            <input type="email" class="input-modal" name="email" id="email" />
+            <svg class="icon-form">
+              <use href="./image/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <div class="form-field-modal">
+            <label class="label" for="comment">Comment</label>
+            <textarea
+              class="input-comment-modal"
+              name="comment"
+              id="comment"
+              placeholder="Enter the text"
+            ></textarea>
+          </div>
+          <div class="checkbox">
+            <label class="agreement" for="agreement"
+              >I agree with the mailing and accept it
+              <a class="agreement accept" href="">Terms of the contract</a>
+              <input type="checkbox" class="contract" name="agreement" id="agreement" />
+              <svg class="icon-check">
+                <use href="./image/icons.svg#icon-check"></use>
+              </svg>
+              <span class="check-empty"></span>
+            </label>
+          </div>
+          <button class="btn-light-down modal-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
