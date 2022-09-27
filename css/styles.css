@@ -99,7 +99,7 @@ p {
     left: 0;
     height: 680px;
     text-align: right;
-    background-image: url(../image/slider/slider1.jpg);
+    background-image: url(../images/slider/slider1.jpg);
     background-repeat: no-repeat;
     background-position: right;
     overflow: hidden;
@@ -459,7 +459,7 @@ transform: translateX(-855px);
 }
 
 .services-prices {
-    background-image: url(../image/price-bg.svg);
+    background-image: url(../images/price-bg.svg);
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
@@ -695,7 +695,7 @@ transform: translateX(-855px);
 .contacts {
     width: 640px;
     height: 644px;
-    background-image: url(../image/contacts-bg.svg);
+    background-image: url(../images/contacts-bg.svg);
     background-repeat: no-repeat;
     padding-left: 100px;
     padding-bottom: 130px;
