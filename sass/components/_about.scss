@@ -1,0 +1,17 @@
+.about {
+    display: flex;
+}
+
+.about-img {
+    gap: 30px;
+}
+.about-main {
+    padding: 0 64px;
+}
+.about-text {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    letter-spacing: 0.02em;
+    color: var($color-text-dark);
+    padding-bottom: 40px;
+}

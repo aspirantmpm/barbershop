@@ -103,8 +103,7 @@ p {
     position: relative;
     top: 0;
     left: 0;
-    height: 680px;
-    text-align: right;
+    height: 680px; 
     background-image: url(../images/slider/slider1.jpg);
     background-repeat: no-repeat;
     background-position: right;
@@ -322,7 +321,7 @@ transform: translateX(-855px);
 
 /* ============ */
 
-.uppertitle-dark {
+.uppertitle-light {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -330,11 +329,11 @@ transform: translateX(-855px);
     line-height: calk(15 / 11);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--dark-color);
+    color: var(--uppertitle-dark);
     padding-bottom: 20px;
 }
 
-.uppertitle-dark::before {
+.uppertitle-light::before {
     content: '';
     display: block;
     height: 1px;
@@ -384,15 +383,15 @@ transform: translateX(-855px);
 
 /* About */
 
-.list.about {
+.about-img {
     gap: 30px;
 }
 
-.cont-ab {
+.about {
     display: flex;
 }
 
-.info-block {
+.about-main {
     padding: 0 64px;
 }
 
@@ -445,7 +444,7 @@ transform: translateX(-855px);
     padding-bottom: 20px;
 }
 
-.text-about {
+.about-text {
     font-size: 14px;
     line-height: calc(26 / 14);
     letter-spacing: 0.02em;
@@ -455,11 +454,11 @@ transform: translateX(-855px);
 
 /* Services and prices */
 
-.serv-img {
+.services-img {
     background-color: var(--services-bg-color);
 }
 
-.services-prices {
+.services {
     background-image: url(../images/price-bg.svg);
     background-repeat: no-repeat;
     margin-left: auto;
@@ -468,12 +467,8 @@ transform: translateX(-855px);
     height: 718px;
 }
 
-.uppertitle-dark {
-    color: var(--uppertitle-dark);
-}
-
-.left-list,
-.right-list {
+.services-list__left,
+.services-list__right {    
     font-size: 18px;
     line-height: calc(30 / 18);
     letter-spacing: 0.02em;
@@ -483,24 +478,24 @@ transform: translateX(-855px);
     margin: 0;
     width: 585px;
     height: 240px;
+}    
+
+.services-list__left {
+    background: var(--gradient-left-list);
 }
 
-.left-list {
-    background: var(--left-list-gradient);
+.services-list__right {
+    background: var(--gradient-right-list);
 }
 
-.right-list {
-    background: var(--right-list-gradient);
-}
-
-.service {
+.services-list__item {
     display: flex;
     align-items: baseline;
     gap: 12px;
     margin-bottom: 20px;
 }
 
-.service::before {
+.services-list__item::before {
     content: '';
     display: block;
     height: 1px;
@@ -508,16 +503,16 @@ transform: translateX(-855px);
     background-color: var(--grow-line-color);
 }
 
-.prices {
+.services-block {
     display: flex;
     margin-bottom: 50px;
 }
 
-.price {
+.services-list__price {
     order: -1;
 }
 
-.btn-light {
+.services-button {
     display: block;
     margin-left: auto;
     margin-right: auto;

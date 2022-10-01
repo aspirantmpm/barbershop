@@ -72,7 +72,56 @@ p {
     color: var($color-main);
 }
 
-.uppertitle-dark {
+.uppertitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.uppertitle::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;
+    background-color: var($color-uppertitle-dark);
+    margin-right: 20px;
+}
+
+.title-dark,
+.title-light {
+    font-family: var($font-second);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
+
+}
+
+.title-dark {
+    color: var($color-dark);
+    padding-bottom: 20px;
+}
+
+.title-light {
+    color: var($color-main);
+    padding-bottom: 40px;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: var($color-text-dark);
+    padding-bottom: 20px;
+}
+
+.uppertitle-light {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -80,11 +129,11 @@ p {
     line-height: calk(15 / 11);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var($color-dark);
+    color: var($color-uppertitle-dark);
     padding-bottom: 20px;
 }
 
-.uppertitle-dark::before {
+.uppertitle-light::before {
     content: '';
     display: block;
     height: 1px;

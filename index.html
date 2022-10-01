@@ -25,7 +25,7 @@
       <div class="container hero">
         <div class="hero-bg">
           <div class="hero-content">
-            <p class="uppertitle-dark">A hair salon for men in Kyiv</p>
+            <p class="uppertitle-light">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
             <p class="hero-subtitle">
               We are experts in trendy men’s haircuts.<br />
@@ -86,20 +86,18 @@
 
     <!-- About -->
     <section class="section" id="about">
-      <div class="container cont-ab">
-        <div class="about-photo">
-          <ul class="list about">
-            <li class="list-item"><img src="./images/about/about1.jpg" alt="Front shave" /></li>
-            <li class="list-item"><img src="./images/about/about2.jpg" alt="Back shave" /></li>
-          </ul>
-        </div>
-        <div class="info-block">
+      <div class="container about">
+        <ul class="list about-img">
+          <li class="list-item"><img src="./images/about/about1.jpg" alt="Front shave" /></li>
+          <li class="list-item"><img src="./images/about/about2.jpg" alt="Back shave" /></li>
+        </ul>
+        <div class="about-main">
           <p class="uppertitle">ABOUT</p>
           <h2 class="title-dark">Best Barbershop in your city</h2>
           <p class="subtitle">
             If you want to add more confidence to your image, you should definitely visit us.
           </p>
-          <p class="text-about">
+          <p class="about-text">
             We are a team that never stops at what has been achieved and are thirsty for changes.
             And when you fall into the hands of our master, you will never be the same again. We are
             a team that is always "on the same wave" with clients. Therefore, we are always ready to
@@ -112,43 +110,43 @@
 
     <!-- Services and prices -->
 
-    <div class="serv-img" id="services">
-      <section class="section services-prices">
+    <div class="services-img" id="services">
+      <section class="section services">
         <div class="container">
-          <p class="uppertitle-dark">spend your time with the best masters</p>
+          <p class="uppertitle-light">spend your time with the best masters</p>
           <h2 class="title-light">Services and prices</h2>
-          <div class="prices">
-            <ul class="left-list">
-              <li class="service">
-                <span class="price">Men’s haircut</span><span>from 300 uah.</span>
+          <div class="services-block">
+            <ul class="services-list__left">
+              <li class="services-list__item">
+                <span class="services-list__price">Men’s haircut</span><span>from 300 uah.</span>
               </li>
-              <li class="service">
-                <span class="price">Beard trim</span><span>from 300 uah.</span>
+              <li class="services-list__item">
+                <span class="services-list__price">Beard trim</span><span>from 300 uah.</span>
               </li>
-              <li class="service">
-                <span class="price">Mustache trim</span><span>from 200 uah.</span>
+              <li class="services-list__item">
+                <span class="services-list__price">Mustache trim</span><span>from 200 uah.</span>
               </li>
-              <li class="service">
-                <span class="price">Straight razor shave</span><span>from 200 uah.</span>
+              <li class="services-list__item">
+                <span class="services-list__price">Straight razor shave</span><span>from 200 uah.</span>
               </li>
             </ul>
 
-            <ul class="right-list">
-              <li class="service">
-                <span class="price">Trainee’s haircut</span><span>from 50 uah.</span>
+            <ul class="services-list__right">
+              <li class="services-list__item">
+                <span class="services-list__price">Trainee’s haircut</span><span>from 50 uah.</span>
               </li>
-              <li class="service">
-                <span class="price">Haircut under the nozzle</span><span>from 200 uah.</span>
+              <li class="services-list__item">
+                <span class="services-list__price">Haircut under the nozzle</span><span>from 200 uah.</span>
               </li>
-              <li class="service">
-                <span class="price">Children’s haircut (0-12 y.o.)</span><span>from 300 uah.</span>
+              <li class="services-list__item">
+                <span class="services-list__price">Children’s haircut (0-12 y.o.)</span><span>from 300 uah.</span>
               </li>
-              <li class="service">
-                <span class="price">Camouflage of gray hair</span><span>from 200 uah.</span>
+              <li class="services-list__item">
+                <span class="services-list__price">Camouflage of gray hair</span><span>from 200 uah.</span>
               </li>
             </ul>
           </div>
-          <button class="btn-light" type="button">ONLINE-BOOKING</button>
+          <button class="services-button btn-light" type="button">ONLINE-BOOKING</button>
         </div>
       </section>
     </div>
@@ -363,22 +361,28 @@
             <div class="name-phone">
               <div class="form-field">
                 <label class="label" for="username"></label>
-                <input type="text" class="input" name="username" id="username" placeholder="name*"/>
+                <input
+                  type="text"
+                  class="input"
+                  name="username"
+                  id="username"
+                  placeholder="name*"
+                />
               </div>
               <div class="form-field">
                 <label class="label" for="tel"></label>
-                <input type="tel" class="input" name="tel" id="tel" placeholder="phone*"/>                
-              </div>      
+                <input type="tel" class="input" name="tel" id="tel" placeholder="phone*" />
+              </div>
             </div>
             <div class="form-field">
-            <label class="label" for="comment"></label>
-            <textarea
-              class="input-comment"
-              name="comment"
-              id="comment"
-              placeholder="massege"
-            ></textarea>
-          </div>
+              <label class="label" for="comment"></label>
+              <textarea
+                class="input-comment"
+                name="comment"
+                id="comment"
+                placeholder="massege"
+              ></textarea>
+            </div>
             <button class="btn-light-down" type="button">send</button>
           </div>
           <div class="contacts">
@@ -390,7 +394,8 @@
                     class="contact"
                     href="https://goo.gl/maps/r24npt5XV5TZUg2dA"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                  >
                     <svg class="icon-contacts">
                       <use href="./images/icons.svg#icon-map-pin"></use>
                     </svg>
