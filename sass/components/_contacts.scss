@@ -1,0 +1,76 @@
+.contacts {
+  width: 570px;
+  height: 644px;
+  background-image: url(../images/contacts-bg.svg);
+  background-repeat: no-repeat;
+  padding-left: 100px;
+  padding-bottom: 130px;
+  padding-top: 130px;
+}
+
+.contact {
+  display: flex;
+  font-style: normal;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var($color-text-light);
+  stroke: var($color-text-light);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var($timing-function);
+}
+
+.contact:hover,
+.contact:focus {
+  color: var($color-brand);
+  stroke: var($color-brand);
+}
+
+.contact-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  padding-bottom: 70px;
+}
+
+.contact-list-item:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.hours-title {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var($color-main);
+  margin-bottom: 20px;
+}
+
+.hours-title::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 60px;
+  background-color: var($color-uppertitle-light);
+  margin-right: 20px;
+}
+
+.icon-contacts {
+  margin-top: 3px;
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  fill: var($color-free);
+}
+
+.time {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var($color-text-light);
+}

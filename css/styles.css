@@ -588,7 +588,7 @@ p {
 }
 
 .team-list {
-    gap: 30px;
+  gap: 30px;
 }
 
 .team-card__title {
@@ -665,7 +665,7 @@ p {
 }
 
 .gallery-list__item {
-    flex-basis: calc((100% - 30 * (4 - 1)) / 4);
+  flex-basis: calc((100% - 30 * (4 - 1)) / 4);
 }
 
 /* contacts */
@@ -681,12 +681,12 @@ p {
 .booking {
   padding-top: 130px;
   padding-bottom: 130px;
-  width: 640px;
+  width: 600px;
   height: 644px;
 }
 
 .contacts {
-  width: 640px;
+  width: 570px;
   height: 644px;
   background-image: url(../images/contacts-bg.svg);
   background-repeat: no-repeat;
@@ -762,7 +762,7 @@ p {
   color: var(--text-light-color);
 }
 
-.btn-light-down {
+/* .btn-light {
   font-weight: 600;
   font-size: 12px;
   line-height: calc(16 / 12);
@@ -780,11 +780,11 @@ p {
   transition-timing-function: var(--timing-function);
 }
 
-.btn-light-down:hover,
-.btn-light-down:focus {
+.btn-light:hover,
+.btn-light:focus {
   background-color: var(--hover-color);
   color: var(--main-color);
-}
+} */
 
 /* Footer */
 
@@ -897,10 +897,8 @@ p {
 
 /* Footer form */
 
-.name-phone {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+.booking-form {
+  display: flex;  
   margin-bottom: 44px;
 }
 

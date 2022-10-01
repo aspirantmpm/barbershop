@@ -1,0 +1,70 @@
+.double-section {
+  background-color: var($color-contacts-bg);
+}
+
+.double-section .container {
+  display: flex;
+}
+
+.booking {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  width: 600px;
+  height: 644px;
+}
+
+.booking-form {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
+.input {
+  width: 260px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--placeholder-text-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--placeholder-text-color);
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.input:focus,
+.input-comment:focus {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  outline: none;
+  text-transform: none;
+}
+
+.input-comment {
+  width: 550px;
+  height: 76px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--placeholder-text-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--placeholder-text-color);
+  cursor: pointer;
+  margin-bottom: 44px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+textarea {
+  resize: none;
+}
