@@ -363,23 +363,24 @@
           <div class="booking">
             <h2 class="title-light">Online-booking</h2>
             <div class="booking-form">
-              
-                <label class="label" for="username"></label>
+              <div class="booking-form__item">
+                <label class="booking-form__label" for="username"></label>
                 <input
                   type="text"
-                  class="input"
+                  class="booking-form__input"
                   name="username"
                   id="username"
                   placeholder="name*"
                 />
-              
-                <label class="label" for="tel"></label>
-                <input type="tel" class="input" name="tel" id="tel" placeholder="phone*" />
-              
+              </div class="booking-form__item">
+              <div>
+                <label class="booking-form__label" for="tel"></label>
+                <input type="tel" class="booking-form__input" name="tel" id="tel" placeholder="phone*" />
+              </div>
             </div>
-            <label class="label" for="comment"></label>
+            <label class="booking-form__label" for="comment"></label>
             <textarea
-              class="input-comment"
+              class="booking-form__comment"
               name="comment"
               id="comment"
               placeholder="message"
@@ -389,31 +390,31 @@
           <div class="contacts">
             <h2 class="title-light">Contacts</h2>
             <address class="contacts-adress">
-              <ul class="contact-list">
-                <li class="contact-list-item">
+              <ul class="contacts-list">
+                <li class="contacts-list__item">
                   <a
-                    class="contact"
+                    class="contacts-list__link"
                     href="https://goo.gl/maps/r24npt5XV5TZUg2dA"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <svg class="icon-contacts">
+                    <svg class="contacts-list__icon">
                       <use href="./images/icons.svg#icon-map-pin"></use>
                     </svg>
                     st. Vasilkovaya,<br />7A Kiev, 08132
                   </a>
                 </li>
-                <li class="contact-list-item">
-                  <a class="contact" href="barbershop@email.com">
-                    <svg class="icon-contacts">
+                <li class="contacts-list__item">
+                  <a class="contacts-list__link" href="barbershop@email.com">
+                    <svg class="contacts-list__icon">
                       <use href="./images/icons.svg#icon-mail-footer"></use>
                     </svg>
                     barbershop@email.com
                   </a>
                 </li>
-                <li class="contact-list-item">
-                  <a class="contact" href="tel:+380961111111">
-                    <svg class="icon-contacts">
+                <li class="contacts-list__item">
+                  <a class="contacts-list__link" href="tel:+380961111111">
+                    <svg class="contacts-list__icon">
                       <use href="./images/icons.svg#icon-phone-footer"></use>
                     </svg>
                     +38 096 111 11 11
@@ -421,8 +422,8 @@
                 </li>
               </ul>
             </address>
-            <p class="hours-title">working hours</p>
-            <p class="time">Every day from <time>09:00</time> to <time>22:00</time></p>
+            <p class="contacts__hours-title">working hours</p>
+            <p class="contacts__hours-time">Every day from <time>09:00</time> to <time>22:00</time></p>
           </div>
         </div>
       </section>
@@ -430,14 +431,14 @@
 
     <footer>
       <div class="container footer">
-        <p class="copyright">&#xa9; Copyright 2020</p>
-        <ul class="link-list-footer">
-          <li class="list-item">
+        <p class="footer-copyright">&#xa9; Copyright 2020</p>
+        <ul class="footer-list">
+          <li class="footer-list__item">
             <a class="link" href="https://Instagram.com" target="_blank" rel="noopener noreferrer"
               >Instagram</a
             >
           </li>
-          <li class="list-item">
+          <li class="footer-list__item">
             <a class="link" href="https://Youtube.com" target="_blank" rel="noopener noreferrer"
               >Youtube</a
             >

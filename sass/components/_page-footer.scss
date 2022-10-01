@@ -1,0 +1,34 @@
+.footer {
+  height: 127px;
+  align-items: center;
+  display: flex;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 40px;
+  list-style: none;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: var($color-dark);
+}
+
+.footer-list::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 60px;
+  background-color: var($color-dark);
+}
+
+.footer-copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: var($color-text-light);
+}

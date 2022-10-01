@@ -8,7 +8,18 @@
   padding-top: 130px;
 }
 
-.contact {
+.contacts-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  padding-bottom: 70px;
+}
+
+.contacts-list__item:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.contacts-list__link {
   display: flex;
   font-style: normal;
   font-size: 18px;
@@ -22,24 +33,21 @@
   transition-timing-function: var($timing-function);
 }
 
-.contact:hover,
-.contact:focus {
+.contacts-list__link:hover,
+.contacts-list__link:focus {
   color: var($color-brand);
   stroke: var($color-brand);
 }
 
-.contact-list {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-  padding-bottom: 70px;
+.contacts-list__icon {
+  margin-top: 3px;
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  fill: var($color-free);
 }
 
-.contact-list-item:not(:last-child) {
-  padding-bottom: 20px;
-}
-
-.hours-title {
+.contacts__hours-title {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -51,7 +59,7 @@
   margin-bottom: 20px;
 }
 
-.hours-title::before {
+.contacts__hours-title::before {
   content: '';
   display: block;
   height: 1px;
@@ -60,15 +68,7 @@
   margin-right: 20px;
 }
 
-.icon-contacts {
-  margin-top: 3px;
-  margin-right: 16px;
-  width: 24px;
-  height: 24px;
-  fill: var($color-free);
-}
-
-.time {
+.contacts__hours-time {
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
