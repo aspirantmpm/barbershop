@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body class="page">
@@ -450,54 +450,54 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close" data-modal-close>
-          <svg class="icon-close">
+          <svg class="close-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="form-name">Leave your details, we will call you back</p>
+        <p class="modal-title">Leave your details, we will call you back</p>
         <form class="modal-form">
-          <div class="form-field-modal">
-            <label class="label" for="username">Name</label>
-            <input type="text" class="input-modal" name="username" id="username" />
-            <svg class="icon-form">
+          <div class="modal-item">
+            <label class="modal-item__label" for="username">Name</label>
+            <input type="text" class="modal-item__input" name="username" id="username" />
+            <svg class="modal-item__icon">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
-          <div class="form-field-modal">
-            <label class="label" for="tel">Phone</label>
-            <input type="tel" class="input-modal" name="tel" id="tel" />
-            <svg class="icon-form">
+          <div class="modal-item">
+            <label class="modal-item__label" for="tel">Phone</label>
+            <input type="tel" class="modal-item__input" name="tel" id="tel" />
+            <svg class="modal-item__icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
-          <div class="form-field-modal">
-            <label class="label" for="email">Mail</label>
-            <input type="email" class="input-modal" name="email" id="email" />
-            <svg class="icon-form">
+          <div class="modal-item">
+            <label class="modal-item__label" for="email">Mail</label>
+            <input type="email" class="modal-item__input" name="email" id="email" />
+            <svg class="modal-item__icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-          <div class="form-field-modal">
-            <label class="label" for="comment">Comment</label>
+          <div class="modal-item">
+            <label class="modal-item__label" for="comment">Comment</label>
             <textarea
-              class="input-comment-modal"
+              class="modal-item__comment"
               name="comment"
               id="comment"
               placeholder="Enter the text"
             ></textarea>
           </div>
-          <div class="checkbox">
-            <label class="agreement" for="agreement"
+          <div class="modal-checkbox">
+            <label class="modal-checkbox__label" for="agreement"
               >I agree with the mailing and accept it
-              <a class="agreement accept" href="">Terms of the contract</a>
-              <input type="checkbox" class="contract" name="agreement" id="agreement" />
-              <svg class="icon-check">
+              <a class="modal-checkbox__link" href="">Terms of the contract</a>
+              <input type="checkbox" class="modal-checkbox__input" name="agreement" id="agreement" />
+              <svg class="modal-checkbox__check">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
-              <span class="check-empty"></span>
+              <span class="modal-checkbox__empty"></span>
             </label>
           </div>
-          <button class="btn-light-down modal-button" type="submit">Send</button>
+          <button class="btn-light modal-button" type="submit">Send</button>
         </form>
       </div>
     </div>

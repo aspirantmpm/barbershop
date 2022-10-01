@@ -1,5 +1,5 @@
 .services-img {
-  background-color: var($color-services-bg);
+  background-color: $color-services-bg;
 }
 
 .services {
@@ -21,7 +21,7 @@
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
-  color: var($color-text-light);
+  color: $color-text-light;
   list-style: none;
   padding: 30px 40px;
   margin: 0;
@@ -30,11 +30,11 @@
 }
 
 .services-list__left {
-  background: var($gradient-left-list);
+  background: $gradient-left-list;
 }
 
 .services-list__right {
-  background: var($gradient-right-list);
+  background: $gradient-right-list;
 }
 
 .services-list__item {
@@ -49,7 +49,7 @@
   display: block;
   height: 1px;
   flex-grow: 1;
-  background-color: var($color-grow-line);
+  background-color: $color-grow-line;
 }
 
 .services-list__price {

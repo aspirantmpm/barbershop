@@ -13,12 +13,12 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var($color-text-light);
+  background-color: $color-main;
   border-radius: 50%;
-  fill: var($color-dark);
+  fill: $color-dark;
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: var($timing-function);
+  transition-timing-function: $timing-function;
 }
 
 .socials__icon {
@@ -28,5 +28,5 @@
 
 .socials__link:hover,
 .socials__link:focus {
-  fill: var($color-brand);
+  fill: $color-brand;
 }

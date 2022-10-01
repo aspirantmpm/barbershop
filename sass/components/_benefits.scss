@@ -15,8 +15,8 @@
 .benefits-list__item {
   width: 170px;
   text-align: center;
-  background-color: var($color-barbers-bg);
-  box-shadow: var($shadow-benefits);
+  background-color: $color-team-bg;
+  box-shadow: $shadow-benefits;
   padding-top: 16px;
   padding-right: 24px;
   padding-bottom: 19px;
@@ -39,14 +39,14 @@
   font-size: 42px;
   line-height: calc(57 / 42);
   letter-spacing: 0.05em;
-  color: var($color-dark);
+  color: $color-dark;
 }
 
 .benefits-list__sub {
   font-weight: 600;
   font-size: 16px;
   line-height: calc(22 / 16);
-  color: var($color-brand);
+  color: $color-brand;
   vertical-align: 10px;
 }
 
@@ -54,7 +54,7 @@
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
-  color: var($color-dark);
+  color: $color-dark;
 }
 
 .benefits-description {

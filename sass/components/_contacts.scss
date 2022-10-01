@@ -25,18 +25,18 @@
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
-  color: var($color-text-light);
-  stroke: var($color-text-light);
+  color: $color-text-light;
+  stroke: $color-text-light;
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: var($timing-function);
+  transition-timing-function: $timing-function;
 }
 
 .contacts-list__link:hover,
 .contacts-list__link:focus {
-  color: var($color-brand);
-  stroke: var($color-brand);
+  color: $color-brand;
+  stroke: $color-brand;
 }
 
 .contacts-list__icon {
@@ -44,7 +44,7 @@
   margin-right: 16px;
   width: 24px;
   height: 24px;
-  fill: var($color-free);
+  fill: $color-free;
 }
 
 .contacts__hours-title {
@@ -55,7 +55,7 @@
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var($color-main);
+  color: $color-main;
   margin-bottom: 20px;
 }
 
@@ -64,7 +64,7 @@
   display: block;
   height: 1px;
   width: 60px;
-  background-color: var($color-uppertitle-light);
+  background-color: $color-uppertitle-light;
   margin-right: 20px;
 }
 
@@ -72,5 +72,5 @@
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
-  color: var($color-text-light);
+  color: $color-text-light;
 }

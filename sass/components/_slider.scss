@@ -14,7 +14,7 @@
     z-index: -20;
     transition-property: transform;
     transition-duration: 250ms;
-    transition-timing-function: var($timing-function);
+    transition-timing-function: $timing-function;
 }
 
 .slide-two {
@@ -26,7 +26,7 @@
     z-index: -1;
     transition-property: transform;
     transition-duration: 500ms;
-    transition-timing-function: var($timing-function);
+    transition-timing-function: $timing-function;
 }
 
 .list-item-back:active .slide-two {
@@ -45,25 +45,25 @@ transform: translateX(-855px);
     font-size: 11px;
     line-height: calc(15 / 11);
     letter-spacing: 0.1em;
-    color: var($color-main);
-    background-color: var($color-free);
+    color: $color-main;
+    background-color: $color-free;
     border: none;
     cursor: pointer;
     padding: 0;
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: var($timing-function);
+    transition-timing-function: $timing-function;
 }
 
 .slider-button::after {
     content: '';
     display: block;
     height: 1px;
-    background-color: var($color-main);
+    background-color: $color-main;
     margin-top: 8px;
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: var($timing-function);
+    transition-timing-function: $timing-function;
 }
 
 .slider-button__back {
@@ -79,12 +79,12 @@ transform: translateX(-855px);
 
 .slider-button:hover,
 .slider-button:focus {
-    color: var($color-brand);
+    color: $color-brand;
 }
 
 .slider-button:hover::after,
 .slider-button:focus::after {
-    background-color: var($color-brand);
+    background-color: $color-brand;
 }
 
 .slider-pagination {
@@ -99,7 +99,7 @@ transform: translateX(-855px);
   width: 8px;
   height: 2px;
   margin-left: auto;
-  background-color: var($color-text-light);
+  background-color: $color-text-light;
 }
 
 .slider-pagination-item:not(:last-child) {
@@ -108,5 +108,5 @@ transform: translateX(-855px);
 
 .slider-pagination-item.active {
   width: 18px;
-  background-color: var($color-main);
+  background-color: $color-main;
 }

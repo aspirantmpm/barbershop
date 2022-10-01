@@ -4,15 +4,15 @@
     left: 30px;
     width: 70px;
     height: 55px;
-    fill: var(--dark-color);
+    fill: $color-dark;
     transition-property: fill;
     transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+    transition-timing-function: $timing-function;
 }
 
 .logo:hover,
 .logo:focus {
-    fill: var(--hover-color);
+    fill: $color-brand;
 }
 
 .header {
@@ -38,16 +38,16 @@
     font-size: 12px;
     line-height: calc(16 / 12);
     letter-spacing: 0.1em;
-    color: var(--main-color);
+    color: $color-main;
     display: flex;
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+    transition-timing-function: $timing-function;
 }
 
 .header-link:hover,
 .header-link:focus {
-    color: var(--hover-color);
+    color: $color-brand;
 }
 
 .btn-light.head {

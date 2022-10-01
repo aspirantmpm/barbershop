@@ -14,7 +14,7 @@
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
-  color: var($color-dark);
+  color: $color-dark;
 }
 
 .footer-list::before {
@@ -22,7 +22,7 @@
   display: block;
   height: 1px;
   width: 60px;
-  background-color: var($color-dark);
+  background-color: $color-dark;
 }
 
 .footer-copyright {
@@ -30,5 +30,5 @@
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
-  color: var($color-text-light);
+  color: $color-text-light;
 }

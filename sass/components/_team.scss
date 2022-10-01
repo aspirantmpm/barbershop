@@ -1,5 +1,5 @@
 .team {
-  color: var($color-team-bg);
+  color: $color-team-bg;
 }
 
 .team-list {
@@ -16,7 +16,7 @@
   line-height: calc(25 / 18);
   text-align: center;
   letter-spacing: 0.02em;
-  color: var($color-dark);
+  color: $color-dark;
 }
 
 .team-card__text {
@@ -24,6 +24,6 @@
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var($color-brand);
+  color: $color-brand;
 }
 
