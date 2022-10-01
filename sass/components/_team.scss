@@ -1,0 +1,29 @@
+.team {
+  color: var($color-team-bg);
+}
+
+.team-list {
+    gap: 30px;
+}
+
+.team-card__title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-card__name {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var($color-dark);
+}
+
+.team-card__text {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var($color-brand);
+}
+
