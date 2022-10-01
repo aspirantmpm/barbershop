@@ -1,0 +1,112 @@
+.slider-buttons {
+    position: relative;
+    top: 616px;
+    left: 986px;
+    transform: translateX(0);    
+}
+
+.slide-one {
+    position: absolute;
+    top: -616px;
+    left: 0;
+    transform: translateX(50%);
+    pointer-events: none;
+    z-index: -20;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: var($timing-function);
+}
+
+.slide-two {
+     position: absolute;
+    top: -616px;
+    left: 0;
+    transform: translateX(-200%);
+    pointer-events: none;
+    z-index: -1;
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: var($timing-function);
+}
+
+.list-item-back:active .slide-two {
+transform: translateX(-855px);
+}
+
+.list-item-forvard:active .slide-one {
+transform: translateX(-855px);
+}
+
+.slider-button {
+    display: flex;
+    width: 68px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.1em;
+    color: var($color-main);
+    background-color: var($color-free);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var($timing-function);
+}
+
+.slider-button::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: var($color-main);
+    margin-top: 8px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var($timing-function);
+}
+
+.slider-button__back {
+    display: block;
+    text-align: left;
+    margin-right: 22px;
+}
+
+.slider-button__forward {
+    display: block;
+    text-align: right;
+}
+
+.slider-button:hover,
+.slider-button:focus {
+    color: var($color-brand);
+}
+
+.slider-button:hover::after,
+.slider-button:focus::after {
+    background-color: var($color-brand);
+}
+
+.slider-pagination {
+    flex-direction: column;
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 35px;
+  z-index: 10;
+}
+
+.slider-pagination-item {
+  width: 8px;
+  height: 2px;
+  margin-left: auto;
+  background-color: var($color-text-light);
+}
+
+.slider-pagination-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.slider-pagination-item.active {
+  width: 18px;
+  background-color: var($color-main);
+}

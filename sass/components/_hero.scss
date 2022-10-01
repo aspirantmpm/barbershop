@@ -1,0 +1,46 @@
+.hero {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 680px;
+    text-align: right;
+    background-image: url(../images/slider/slider1.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 680px;
+    width: 1200px;
+    padding-right: 30px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 270px;
+    left: 212px;    
+    z-index: 10;
+}
+
+.hero-title {
+    font-family: var($font-second);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: calc(85 / 72);
+    letter-spacing: 0.05em;
+    color: var($color-main);
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: var($color-text-light);
+}

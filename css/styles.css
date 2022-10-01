@@ -89,6 +89,12 @@ p {
     color: var(--main-color);
 }
 
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 /* ===================== */
 /* Hero and Header */
 /* ===================== */
@@ -105,7 +111,7 @@ p {
     overflow: hidden;
 }
 
-.down-group {
+.slider-buttons {
     position: relative;
     top: 616px;
     left: 986px;
@@ -136,15 +142,15 @@ p {
     transition-timing-function: var(--timing-function);
 }
 
-.list-item-back:active .slide-two {
+.slider-button__back:active .slide-two {
 transform: translateX(-855px);
 }
 
-.list-item-forvard:active .slide-one {
+.slider-button__forward:active .slide-one {
 transform: translateX(-855px);
 }
 
-.bg-img {
+.hero-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -162,7 +168,7 @@ transform: translateX(-855px);
     z-index: 10;
 }
 
-.btn-slider {
+.slider-button {
     display: flex;
     width: 68px;
     height: 24px;
@@ -180,7 +186,7 @@ transform: translateX(-855px);
     transition-timing-function: var(--timing-function);
 }
 
-.btn-slider::after {
+.slider-button::after {
     content: '';
     display: block;
     height: 1px;
@@ -191,24 +197,24 @@ transform: translateX(-855px);
     transition-timing-function: var(--timing-function);
 }
 
-.back {
+.slider-button__back {
     display: block;
     text-align: left;
     margin-right: 22px;
 }
 
-.forward {
+.slider-button__forward {
     display: block;
     text-align: right;
 }
 
-.btn-slider:hover,
-.btn-slider:focus {
+.slider-button:hover,
+.slider-button:focus {
     color: var(--hover-color);
 }
 
-.btn-slider:hover::after,
-.btn-slider:focus::after {
+.slider-button:hover::after,
+.slider-button:focus::after {
     background-color: var(--hover-color);
 }
 
@@ -262,7 +268,7 @@ transform: translateX(-855px);
     align-items: center;
 }
 
-.nav {
+.header-nav {
     display: flex;
     list-style: none;
     padding-left: 0;
@@ -293,7 +299,7 @@ transform: translateX(-855px);
     display: flex;
 }
 
-.left-group {
+.media {
     position: absolute;
     left: -70px;
     bottom: 169px;
@@ -301,12 +307,12 @@ transform: translateX(-855px);
     display: flex;
 }
 
-.link-list.left {
+.media-links {
     align-items: center;
     gap: 30px;
 }
 
-.left::before {
+.media-links::before {
     content: '';
     display: block;
     height: 1px;
@@ -374,12 +380,7 @@ transform: translateX(-855px);
     color: var(--hover-color);
 }
 
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
+
 
 /* About */
 

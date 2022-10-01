@@ -1,0 +1,27 @@
+/* fonts */
+$font-main: 'Open Sans';
+$font-second: 'Raleway';
+/* colors */
+$color-main: #ffffff;
+$color-brand: #ff6c00;
+$color-uppertitle-dark: rgba(157, 164, 189, 0.6);
+$color-text-light: #9da4bd;
+$color-text-dark: #555555;
+$color-slider-bg: rgba(25, 28, 38, 0.2);
+$color-dark: #303030;
+$color-free: transparent;
+$color-services-bg: #111319;
+$color-barbers-bg: #f7f7f7;
+$color-contacts-bg: #191c26;
+$color-grow-line: rgba(157, 164, 189, 0.12);
+$color-backdrop: rgba(0, 0, 0, 0.2);
+$color-modal: rgba(255, 255, 255, 1);
+$color-close-border: rgba(0, 0, 0, 0.1);
+$color-placeholder-text: rgba(157, 164, 189, 0.4);
+/* others */
+$shadow-benefits: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$shadow-close: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+$gradient-left-list: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+$gradient-right-list: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
