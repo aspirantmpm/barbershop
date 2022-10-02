@@ -81,6 +81,61 @@
             </li>
           </ul>
         </div>
+        <button
+          class="menu-toggle js-open-menu"
+          type="button"
+          name="menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu" type="button" name="menu">
+            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+              <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link--active" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+          <div class="mobile-info">
+            <ul class="mobile-contact">
+              <li class="mobile-contact__item">
+                <a class="mobile-contact__tel" href="tel:+380961111111"> +38 096 111 11 11 </a>
+              </li>
+              <li class="mobile-contact__item">
+                <a class="mobile-contact__mail" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a href="" class="mobile-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
