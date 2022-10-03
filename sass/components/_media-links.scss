@@ -18,3 +18,9 @@
     width: 60px;
     background-color: $color-dark;
 }
+
+@media screen and (max-width: 767px) {
+    .media {
+        display: none;
+    }
+}

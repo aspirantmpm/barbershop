@@ -1,45 +1,68 @@
 .hero {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 680px;    
-    background-image: url(../images/slider/slider1.jpg);
-    background-repeat: no-repeat;
-    background-position: right;
-    overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url(../images/hero/hero-bg1d@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  overflow: hidden;
 }
 
 .hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  // width: 1200px;
+  // padding-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url(../images/hero/hero-bg1m@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 580px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    // background-image: url(../images/hero/hero-bg1t@1x.jpg);
     height: 680px;
-    width: 1200px;
-    padding-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    // background-image: url(../images/hero/hero-bg1d@1x.jpg);
+    height: 680px;
+  }
 }
 
 .hero-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    top: 270px;
-    left: 212px;    
-    z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 270px;
+  left: 212px;
+  z-index: 10;
 }
 
 .hero-title {
-    font-family: $font-second;
-    font-weight: 700;
-    font-size: 72px;
-    line-height: calc(85 / 72);
-    letter-spacing: 0.05em;
-    color: $color-main;
-    margin-bottom: 20px;
+  font-family: $font-second;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  color: $color-main;
+  margin-bottom: 20px;
 }
 
 .hero-subtitle {
-    font-size: 18px;
-    line-height: calc(30 / 18);
-    letter-spacing: 0.02em;
-    color: $color-text-light;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: $color-text-light;
 }

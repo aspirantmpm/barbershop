@@ -110,3 +110,10 @@ transform: translateX(-855px);
   width: 18px;
   background-color: $color-main;
 }
+
+@media screen and (max-width: 767px) {
+    .slider-buttons,
+    .slider-pagination {
+        display: none;
+    }
+}
