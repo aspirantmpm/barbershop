@@ -1,63 +1,64 @@
 .logo {
-    position: absolute;
-    top: 32px;
-    left: 30px;
-    width: 70px;
-    height: 55px;
+  width: 70px;
+  height: 55px;
+  @media screen and (max-width: 767px) {
+    fill: $color-main;
+  }
+  @media screen and (min-width: 768px) {
     fill: $color-dark;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: $timing-function;
+  }
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
 }
 
 .logo:hover,
 .logo:focus {
-    fill: $color-brand;
+  fill: $color-brand;
 }
 
-
 .header {
-    position: absolute;
-    top: 32px;
-    left: 155px;
-    width: 1020px;
-    display: flex;
-    align-items: center;
+  position: relative;
+  top: 40px;  
+  display: flex;
+  align-items: center;
 }
 
 .header-nav {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    margin-right: 310px;
-    gap: 30px;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-right: 310px;
+  gap: 30px;
 }
 
 .header-link {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(16 / 12);
-    letter-spacing: 0.1em;
-    color: $color-main;
-    display: flex;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $timing-function;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  color: $color-main;
+  display: flex;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
 }
 
 .header-link:hover,
 .header-link:focus {
-    color: $color-brand;
+  color: $color-brand;
 }
 
 .btn-light.head {
-    margin-left: 45px;
-    display: flex;
+  margin-left: 45px;
+  display: flex;
 }
 
 @media screen and (max-width: 767px) {
-    .header {
-        display: none;
-    }
+  .header-nav,
+  .header-link,
+  .btn-light.head {
+    display: none;
+  }
 }

@@ -16,8 +16,22 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -203,6 +217,7 @@ p {
   border: none;
   border-radius: 50%;
   outline: none;
+  fill: #ffffff;
 }
 .menu-toggle:hover, .menu-toggle:focus {
   fill: #ff6c00;
@@ -265,18 +280,24 @@ p {
   }
 }
 .logo {
-  position: absolute;
-  top: 32px;
-  left: 30px;
   width: 70px;
   height: 55px;
-  fill: #303030;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    fill: #ffffff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    fill: #303030;
+  }
 }
 
 .logo:hover,
@@ -285,10 +306,8 @@ p {
 }
 
 .header {
-  position: absolute;
-  top: 32px;
-  left: 155px;
-  width: 1020px;
+  position: relative;
+  top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,7 +357,9 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .header {
+  .header-nav,
+.header-link,
+.btn-light.head {
     display: none;
   }
 }
@@ -348,8 +369,20 @@ p {
   left: 0;
   background-image: url(../images/hero/hero-bg1d@1x.jpg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
   overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 580px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 680px;
+  }
 }
 
 .hero-bg {
@@ -358,25 +391,6 @@ p {
   left: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .hero {
-    background-image: url(../images/hero/hero-bg1m@1x.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    height: 580px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero {
-    height: 680px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    height: 680px;
-  }
-}
 .hero-content {
   position: absolute;
   top: 0;

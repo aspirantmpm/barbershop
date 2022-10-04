@@ -1,65 +1,73 @@
 body {
-    background-color: $color-main;
-    font-family: $font-main, sans-serif;
+  background-color: $color-main;
+  font-family: $font-main, sans-serif;
 }
 
 h1,
 h2,
 h3,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 1200px;
-    padding: 0 15px;
+  }
 }
 
 .section {
-    padding-bottom: 130px;
-    padding-top: 130px;
+  padding-bottom: 130px;
+  padding-top: 130px;
 }
 
 .link {
-    color: $color-dark;
-    text-decoration: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $timing-function;
+  color: $color-dark;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
 }
 
 .link:hover,
 .link:focus {
-    color: $color-brand;
+  color: $color-brand;
 }
 
 .btn,
 .btn-light,
 .btn-dark {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(16 / 12);
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    min-width: 160px;
-    background-color: $color-free;
-    border: 1px solid $color-brand;
-    border-radius: 25px;
-    padding: 12px 20px;
-    cursor: pointer;
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: $timing-function;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  min-width: 160px;
+  background-color: $color-free;
+  border: 1px solid $color-brand;
+  border-radius: 25px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
 }
 
 .btn-light {
-    color: $color-main;
+  color: $color-main;
 }
 
 .btn-dark {
-    color: $color-dark;
+  color: $color-dark;
 }
 
 .btn:hover,
@@ -68,78 +76,77 @@ p {
 .btn-light:focus,
 .btn-dark:hover,
 .btn-dark:focus {
-    background-color: $color-brand;
-    color: $color-main;
+  background-color: $color-brand;
+  color: $color-main;
 }
 
 .uppertitle {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: calc(15 / 11);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: $color-dark;
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $color-dark;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .uppertitle::before {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 60px;
-    background-color: $color-uppertitle-light;
-    margin-right: 20px;
+  content: '';
+  display: block;
+  height: 1px;
+  width: 60px;
+  background-color: $color-uppertitle-light;
+  margin-right: 20px;
 }
 
 .title-dark,
 .title-light {
-    font-family: $font-second;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: calc(49 / 42);
-    letter-spacing: 0.05em;
-
+  font-family: $font-second;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
 }
 
 .title-dark {
-    color: $color-dark;
-    padding-bottom: 20px;
+  color: $color-dark;
+  padding-bottom: 20px;
 }
 
 .title-light {
-    color: $color-main;
-    padding-bottom: 40px;
+  color: $color-main;
+  padding-bottom: 40px;
 }
 
 .subtitle {
-    font-size: 18px;
-    line-height: calc(30 / 18);
-    letter-spacing: 0.02em;
-    color: $color-text-dark;
-    padding-bottom: 20px;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: $color-text-dark;
+  padding-bottom: 20px;
 }
 
 .uppertitle-light {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: calk(15 / 11);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: $color-uppertitle-light;
-    padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calk(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $color-uppertitle-light;
+  padding-bottom: 20px;
 }
 
 .uppertitle-light::before {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 60px;
-    background-color: $color-uppertitle-light;
-    margin-right: 20px;
+  content: '';
+  display: block;
+  height: 1px;
+  width: 60px;
+  background-color: $color-uppertitle-light;
+  margin-right: 20px;
 }
 
 .hidden {
@@ -156,8 +163,8 @@ p {
 }
 
 .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
