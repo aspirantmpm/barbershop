@@ -1,20 +1,28 @@
-.menu-toggle {
-  position: absolute;
-  top: 10px;
-  right: 15px;
+.menu-toggle {  
   min-height: 40px;
   min-width: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
-  outline: none;
+  outline: none;  
+}
+
+.menu-toggle__icon {
   fill: $color-main;
+  &:hover,
+  &:focus {
+    fill: $color-brand;
+  }
+}
+
+.menu-toggle__cross {  
+  fill: $color-dark;
   &:hover,
   &:focus {
     fill: $color-brand;
@@ -25,48 +33,55 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 70%;
   height: 100%;
   padding: 48px 40px;
   background-color: $color-main;
   z-index: 999;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
 
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition: transform 250ms ease-in-out;
 }
 
 .menu-container.is-open {
-  transform: translateX(0);
+  transform: translateX(40%);
 }
 
 .mobile-nav {
-  list-style: none;
+  list-style: none;    
   padding: 0;
   margin: 0;
+  margin-bottom: 64px;
 }
 
-// .mobile-nav__link {
-//   font-weight: 500;
-//   font-size: 40px;
-//   line-height: calc(47 / 40);
-//   letter-spacing: 0.02em;
-//   color: $color-title;
-//   text-decoration: none;
-//   transition-property: color;
-//   transition-duration: 250ms;
-//   transition-timing-function: $timing-function;
-//   &:hover,
-//   &:focus {
-//     color: $color-brand;
-//   }
-//   &--active {
-//     @extend .mobile-nav__link;
-//     color: $color-brand;
-//   }
-// }
+.mobile-nav__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mobile-nav__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  letter-spacing: 0.1em;
+  color: $color-dark;  
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+  &:hover,
+  &:focus {
+    color: $color-brand;
+  }  
+}
+
+.btn-dark__mobile {
+@extend .btn-dark;
+width: 194px;
+margin-top: 24px;
+}
 
 .menu-button .icon-cross {
   display: none;

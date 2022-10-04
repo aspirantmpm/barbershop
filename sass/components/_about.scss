@@ -1,17 +1,20 @@
 .about {
-    display: flex;
+  display: flex;
 }
 
 .about-img {
-    gap: 30px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  gap: 30px;
 }
 .about-description {
-    padding: 0 64px;
+  padding: 0 64px;
 }
 .about-text {
-    font-size: 14px;
-    line-height: calc(26 / 14);
-    letter-spacing: 0.02em;
-    color: $color-text-dark;
-    padding-bottom: 40px;
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+  color: $color-text-dark;
+  padding-bottom: 40px;
 }
