@@ -16,21 +16,23 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    padding: 0 31px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding: 0 15px;
   }
 }
 
@@ -104,7 +106,7 @@ p {
   line-height: 1.3636363636;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
+  color: #303030;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +121,7 @@ p {
   display: block;
   height: 1px;
   width: 60px;
-  background-color: rgba(157, 164, 189, 0.6);
+  background-color: #303030;
   margin-right: 20px;
 }
 
@@ -127,9 +129,21 @@ p {
 .title-light {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.1666666667;
   letter-spacing: 0.05em;
+}
+@media screen and (max-width: 1199px) {
+  .title-dark,
+.title-light {
+    font-size: 28px;
+    line-height: 1.1785714286;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-dark,
+.title-light {
+    font-size: 42px;
+    line-height: 1.1666666667;
+  }
 }
 
 .title-dark {
@@ -143,11 +157,21 @@ p {
 }
 
 .subtitle {
-  font-size: 18px;
-  line-height: 1.6666666667;
   letter-spacing: 0.02em;
   color: #555555;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .subtitle {
+    font-size: 16px;
+    line-height: 1.625;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    font-size: 18px;
+    line-height: 1.6666666667;
+  }
 }
 
 .uppertitle-light {
@@ -189,7 +213,7 @@ p {
   overflow: hidden;
 }
 
-.list {
+.list, .mobile-link {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -239,7 +263,9 @@ p {
   left: 0;
   width: 70%;
   height: 100%;
-  padding: 48px 40px;
+  padding-top: 48px;
+  padding-right: 40px;
+  padding-left: 40px;
   background-color: #ffffff;
   z-index: 999;
   display: -webkit-box;
@@ -294,6 +320,7 @@ p {
 .btn-dark__mobile {
   width: 194px;
   margin-top: 24px;
+  margin-bottom: 64px;
 }
 
 .menu-button .icon-cross {
@@ -306,6 +333,41 @@ p {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.mobile-link {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3571428571;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.mobile-link__instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.mobile-link__instagram::before {
+  content: "";
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 60px;
+  background-color: #303030;
+}
+
+.mobile-link__youtube {
+  display: block;
+  margin-left: 100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -974,8 +1036,10 @@ p {
   }
 }
 
-.about-description {
-  padding: 0 64px;
+@media screen and (max-width: 767px) {
+  .about-description {
+    padding: 84px 0;
+  }
 }
 
 .about-text {

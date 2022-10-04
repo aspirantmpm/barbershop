@@ -13,15 +13,17 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
   @media screen and (min-width: 480px) {
     width: 480px;
+    padding: 0 31px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding: 0 15px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding: 0 15px;
   }
 }
 
@@ -86,7 +88,7 @@ p {
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: $color-uppertitle-light;
+  color: $color-dark;
   display: flex;
   align-items: center;
   padding-bottom: 20px;
@@ -97,7 +99,7 @@ p {
   display: block;
   height: 1px;
   width: 60px;
-  background-color: $color-uppertitle-light;
+  background-color: $color-dark;
   margin-right: 20px;
 }
 
@@ -105,8 +107,14 @@ p {
 .title-light {
   font-family: $font-second;
   font-weight: 700;
-  font-size: 42px;
-  line-height: calc(49 / 42);
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: calc(33 / 28);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
   letter-spacing: 0.05em;
 }
 
@@ -121,8 +129,14 @@ p {
 }
 
 .subtitle {
-  font-size: 18px;
-  line-height: calc(30 / 18);
+  @media screen and (max-width: 1199px) {
+    font-size: 16px;
+    line-height: calc(26 / 16);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+  }
   letter-spacing: 0.02em;
   color: $color-text-dark;
   padding-bottom: 20px;

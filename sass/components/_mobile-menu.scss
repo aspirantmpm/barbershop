@@ -1,4 +1,4 @@
-.menu-toggle {  
+.menu-toggle {
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -10,7 +10,7 @@
   cursor: pointer;
   border: none;
   border-radius: 50%;
-  outline: none;  
+  outline: none;
 }
 
 .menu-toggle__icon {
@@ -21,7 +21,7 @@
   }
 }
 
-.menu-toggle__cross {  
+.menu-toggle__cross {
   fill: $color-dark;
   &:hover,
   &:focus {
@@ -35,7 +35,10 @@
   left: 0;
   width: 70%;
   height: 100%;
-  padding: 48px 40px;
+  padding-top: 48px;
+  padding-right: 40px;
+  padding-left: 40px;
+  // padding-bottom: auto;
   background-color: $color-main;
   z-index: 999;
   display: flex;
@@ -51,7 +54,7 @@
 }
 
 .mobile-nav {
-  list-style: none;    
+  list-style: none;
   padding: 0;
   margin: 0;
   margin-bottom: 64px;
@@ -67,20 +70,21 @@
   font-size: 18px;
   line-height: calc(25 / 18);
   letter-spacing: 0.1em;
-  color: $color-dark;  
+  color: $color-dark;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
   &:hover,
   &:focus {
     color: $color-brand;
-  }  
+  }
 }
 
 .btn-dark__mobile {
-@extend .btn-dark;
-width: 194px;
-margin-top: 24px;
+  @extend .btn-dark;
+  width: 194px;
+  margin-top: 24px;
+  margin-bottom: 64px;
 }
 
 .menu-button .icon-cross {
@@ -93,6 +97,36 @@ margin-top: 24px;
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.mobile-link {
+  @extend .list;
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  letter-spacing: 0.2em;
+  color: $color-dark;
+}
+
+.mobile-link__instagram {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.mobile-link__instagram::before {
+  content: '';
+  margin-right: 40px;
+  display: flex;
+  height: 1px;
+  width: 60px;
+  background-color: $color-dark;
+}
+
+.mobile-link__youtube {
+  display: block;
+  margin-left: 100px;
 }
 
 @media screen and (min-width: 768px) {
