@@ -1055,43 +1055,85 @@ p {
 }
 
 .services {
-  background-image: url(../images/price-bg.svg);
+  background-image: url(/images/services/services-m@1x.png);
   background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-  height: 718px;
+}
+@media screen and (min-width: 768px) {
+  .services {
+    background-image: url(/images/services/services-t@1x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    background-image: url(/images/services/services-d@1x.png);
+  }
+}
+@media screen and (min-width: 480px) {
+  .services {
+    height: 738px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .services {
+    height: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    height: 718px;
+  }
 }
 
 .services-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .services-block {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .services-list__left,
 .services-list__right {
-  font-size: 18px;
-  line-height: 1.6666666667;
   letter-spacing: 0.02em;
   color: #9da4bd;
   list-style: none;
   padding: 30px 40px;
   margin: 0;
-  width: 585px;
   height: 240px;
 }
-
-.services-list__left {
-  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
-
+@media screen and (max-width: 1199px) {
+  .services-list__left,
 .services-list__right {
-  background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    font-size: 14px;
+    line-height: 1.4285714286;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services-list__left,
+.services-list__right {
+    font-size: 18px;
+    line-height: 1.6666666667;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  .services-list__left {
+    background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  .services-list__right {
+    background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+}
 .services-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
