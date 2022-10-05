@@ -3,17 +3,15 @@
 }
 
 .services {
-  // margin-left: auto;
-  // margin-right: auto;
   background-image: url(/images/services/services-m@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
   @media screen and (min-width: 768px) {
     background-image: url(/images/services/services-t@1x.png);
   }
   @media screen and (min-width: 1200px) {
     background-image: url(/images/services/services-d@1x.png);
   }
-  background-repeat: no-repeat;
-
   @media screen and (min-width: 480px) {
     height: 738px;
   }
@@ -35,23 +33,52 @@
   margin-bottom: 50px;
 }
 
+.services-list__item-all {
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    padding: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    padding: 32px 34px;
+  }  
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }  
+  letter-spacing: 0.02em;
+  color: $color-text-light;
+  list-style: none;
+  margin: 0;
+  // margin-bottom: 44px;
+}
+
 .services-list__left,
 .services-list__right {
   @media screen and (max-width: 1199px) {
-    font-size: 14px;
-    line-height: calc(20 / 14);
+    display: none;
   }
   @media screen and (min-width: 1200px) {
     font-size: 18px;
     line-height: calc(30 / 18);
   }
+  padding: 30px 40px;
   letter-spacing: 0.02em;
   color: $color-text-light;
   list-style: none;
-  padding: 30px 40px;
   margin: 0;
   // width: 585px;
-  height: 240px;
+  // height: 240px;
+}
+
+.services-list__left {
+  background: $gradient-left-list;
+  
+}
+.services-list__right {
+  padding: 0 30px 30px 30px;
+  background: $gradient-right-list;
 }
 
 @media screen and (min-width: 1200px) {
@@ -67,6 +94,9 @@
   display: flex;
   align-items: baseline;
   gap: 12px;
+}
+
+.services-list__item:not(:last-child) {
   margin-bottom: 20px;
 }
 

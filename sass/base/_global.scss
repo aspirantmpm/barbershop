@@ -28,8 +28,18 @@ p {
 }
 
 .section {
-  padding-bottom: 130px;
-  padding-top: 130px;
+  @media screen and (min-width: 480px) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .link {
@@ -107,6 +117,23 @@ p {
 .title-light {
   font-family: $font-second;
   font-weight: 700;
+  letter-spacing: 0.05em;
+  @media screen and (max-width: 1199px) {
+    font-size: 40px;
+    line-height: calc(47 / 40);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
+}
+
+.title-about {
+  font-family: $font-second;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: $color-dark;
+  padding-bottom: 20px;
   @media screen and (max-width: 1199px) {
     font-size: 28px;
     line-height: calc(33 / 28);
@@ -115,7 +142,6 @@ p {
     font-size: 42px;
     line-height: calc(49 / 42);
   }
-  letter-spacing: 0.05em;
 }
 
 .title-dark {
