@@ -20,7 +20,7 @@ p {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    padding: 0 31px;
+    padding: 0 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -180,6 +180,16 @@ p {
   }
 }
 
+.title-benefits {
+  font-family: "Raleway";
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #303030;
+  padding-bottom: 20px;
+  font-size: 42px;
+  line-height: 1.1666666667;
+}
+
 .title-dark {
   color: #303030;
   padding-bottom: 20px;
@@ -206,6 +216,14 @@ p {
     font-size: 18px;
     line-height: 1.6666666667;
   }
+}
+
+.subtitle-benefits {
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #555555;
+  padding-bottom: 44px;
 }
 
 .uppertitle-light {
@@ -1246,10 +1264,10 @@ p {
   }
 }
 
-.benefits-cards {
-  margin-left: 100px;
-  margin-right: 130px;
-  width: 370px;
+@media screen and (min-width: 1200px) {
+  .title-question {
+    display: none;
+  }
 }
 
 .benefits-list {
@@ -1258,15 +1276,27 @@ p {
 }
 
 .benefits-list__item {
-  width: 170px;
+  height: 133px;
   text-align: center;
   background-color: #f7f7f7;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding-top: 16px;
-  padding-right: 24px;
-  padding-bottom: 19px;
-  padding-left: 24px;
+  padding: 20px;
+}
+@media screen and (min-width: 480px) {
+  .benefits-list__item {
+    width: 194px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits-list__item {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-list__item {
+    width: 170px;
+  }
 }
 
 .benefits-list__item:nth-child(2n) {
@@ -1303,10 +1333,6 @@ p {
   color: #303030;
 }
 
-.benefits-description {
-  width: 500px;
-  margin-right: 70px;
-}
 @media screen and (max-width: 1199px) {
   .benefits-description {
     -webkit-box-ordinal-group: 0;

@@ -5,25 +5,37 @@
   }
 }
 
-.benefits-cards {
-  margin-left: 100px;
-  margin-right: 130px;
-  width: 370px;
+.title-question {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
+
+// .benefits-cards {
+//   // margin-left: 100px;
+//   // margin-right: 130px;
+//   // width: 370px;
+// }
 
 .benefits-list {
   flex-wrap: wrap;
 }
 
 .benefits-list__item {
-  width: 170px;
+  @media screen and (min-width: 480px) {
+    width: 194px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+  height: 133px;
   text-align: center;
   background-color: $color-team-bg;
   box-shadow: $shadow-benefits;
-  padding-top: 16px;
-  padding-right: 24px;
-  padding-bottom: 19px;
-  padding-left: 24px;
+  padding: 20px;
 }
 
 .benefits-list__item:nth-child(2n) {
@@ -64,10 +76,6 @@
   @media screen and (max-width: 1199px) {
     order: -1;
   }
-  width: 500px;
-  margin-right: 70px;
+  // width: 500px;
+  // margin-right: 70px;
 }
-
-
-
-
