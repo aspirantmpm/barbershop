@@ -3,10 +3,20 @@
 }
 
 .team-list {
-  @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
-  }
+  @extend %list;
+  gap: 64px;
+  display: flex;
+  flex-wrap: wrap;  
+  @media screen and (min-width: 1200px) {
     gap: 30px;
+  }
+}
+
+.team-card {
+  background-color: $color-main;  
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px)/3);     
+  }
 }
 
 .team-card__title {

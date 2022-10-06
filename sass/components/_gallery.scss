@@ -1,10 +1,10 @@
 .gallery-list {
-  @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
-  }
+  @extend %list;
   gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.gallery-list__item {
-  flex-basis: calc((100% - 30px * (4 - 1)) / 4);
-}
+// .gallery-list__item {
+//   flex-basis: calc((100% - 30px * (4 - 1)) / 4);
+// }

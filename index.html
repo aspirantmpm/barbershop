@@ -127,11 +127,7 @@
                 >
               </li>
               <li class="mobile-link__youtube">
-                <a
-                  class="link"
-                  href="https://Youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a class="link" href="https://Youtube.com" target="_blank" rel="noopener noreferrer"
                   >Youtube</a
                 >
               </li>
@@ -150,7 +146,10 @@
         </ul>
         <div class="about-description">
           <p class="uppertitle">ABOUT</p>
-          <h2 class="title-about">Best Barbershop in <br/> your city</h2>
+          <h2 class="title-about">
+            Best Barbershop in <br />
+            your city
+          </h2>
           <p class="subtitle">
             If you want to add more confidence to your image, you should definitely visit us.
           </p>
@@ -171,7 +170,7 @@
       <section class="section services">
         <div class="container">
           <p class="uppertitle-light">spend your time with the best masters</p>
-          <h2 class="title-light">Services and prices</h2>
+          <h2 class="title-services">Services and prices</h2>
           <div class="services-block">
             <ul class="services-list__item-all">
               <li class="services-list__item">
@@ -186,7 +185,7 @@
               <li class="services-list__item">
                 <span class="services-list__price">Straight razor shave</span
                 ><span>from 200 uah.</span>
-              </li>            
+              </li>
               <li class="services-list__item">
                 <span class="services-list__price">Trainee’s haircut</span><span>from 50 uah.</span>
               </li>
@@ -286,7 +285,8 @@
             to us?
           </h2>
           <p class="subtitle-benefits">
-            Only good things are said about us. But it's<br />better to see and feel 1 time than read 10<br />times.
+            Only good things are said about us. But it's<br />better to see and feel 1 time than
+            read 10<br />times.
           </p>
         </div>
       </div>
@@ -300,7 +300,21 @@
 
         <ul class="team-list list">
           <li class="team-card">
-            <img src="./images/team/john.jpg" alt="John Smith" class="img" />
+            <picture class="team-card__img">
+              <source
+                srcset="./images/team/team-1d@1x.jpg 1x, ./images/team/team-1d@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/team/team-1t@1x.jpg 1x, ./images/team/team-1t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/team/team-1m@1x.jpg 1x, ./images/team/team-1m@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/team/team-1d@1x.jpg" alt="John Smith" />
+            </picture>
             <div class="team-card__title">
               <h3 class="team-card__name">John Smith</h3>
               <p class="team-card__text">Extreme Barber</p>
@@ -339,7 +353,21 @@
           </li>
 
           <li class="team-card">
-            <img src="./images/team/michele.jpg" alt="Michele Doe" class="img" />
+            <picture class="team-card__img">
+              <source
+                srcset="./images/team/team-2d@1x.jpg 1x, ./images/team/team-2d@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/team/team-2t@1x.jpg 1x, ./images/team/team-2t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/team/team-2m@1x.jpg 1x, ./images/team/team-2m@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/team/team-2d@1x.jpg" alt="Michele Doe" />
+            </picture>            
             <div class="team-card__title">
               <h3 class="team-card__name">Michele Doe</h3>
               <p class="team-card__text">Extreme Barber</p>
@@ -378,7 +406,21 @@
           </li>
 
           <li class="team-card">
-            <img src="./images/team/alan.jpg" alt="Alan Black" class="img" />
+            <picture class="team-card__img">
+              <source
+                srcset="./images/team/team-3d@1x.jpg 1x, ./images/team/team-3d@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/team/team-3t@1x.jpg 1x, ./images/team/team-3t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/team/team-3m@1x.jpg 1x, ./images/team/team-3m@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/team/team-3d@1x.jpg" alt="Alan Black" />
+            </picture>                
             <div class="team-card__title">
               <h3 class="team-card__name">Alan Black</h3>
               <p class="team-card__text">Extreme Barber</p>
@@ -426,16 +468,72 @@
         <h2 class="tittle-dark hidden">Gallery</h2>
         <ul class="list gallery-list">
           <li class="gallery-list__item">
-            <img src="./images/gallery/gallery1.jpg" alt="haircut" class="img" />
+            <picture class="gallery-card__img">
+              <source
+                srcset="./images/gallery/gallery-1d@1x.jpg 1x, ./images/gallery/gallery-1d@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/gallery/gallery-1t@1x.jpg 1x, ./images/gallery/gallery-1t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/gallery/gallery-1m@1x.jpg 1x, ./images/gallery/gallery-1m@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/gallery/gallery-1d@1x.jpg" alt="haircut" />
+            </picture>            
           </li>
           <li class="gallery-list__item">
-            <img src="./images/gallery/gallery2.jpg" alt="shaving" class="img" />
+            <picture class="gallery-card__img">
+              <source
+                srcset="./images/gallery/gallery-2d@1x.jpg 1x, ./images/gallery/gallery-2d@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/gallery/gallery-2t@1x.jpg 1x, ./images/gallery/gallery-2t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/gallery/gallery-2m@1x.jpg 1x, ./images/gallery/gallery-2m@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/gallery/gallery-2d@1x.jpg" alt="shaving" />
+            </picture>            
           </li>
           <li class="gallery-list__item">
-            <img src="./images/gallery/gallery3.jpg" alt="compress" class="img" />
+          <picture class="gallery-card__img">
+              <source
+                srcset="./images/gallery/gallery-3d@1x.jpg 1x, ./images/gallery/gallery-3d@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/gallery/gallery-3t@1x.jpg 1x, ./images/gallery/gallery-3t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/gallery/gallery-3m@1x.jpg 1x, ./images/gallery/gallery-3m@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/gallery/gallery-3d@1x.jpg" alt="compress" />
+            </picture>            
           </li>
           <li class="gallery-list__item">
-            <img src="./images/gallery/gallery4.jpg" alt="edging" class="img" />
+            <picture class="gallery-card__img">
+              <source
+                srcset="./images/gallery/gallery-4d@1x.jpg 1x, ./images/gallery/gallery-4d@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/gallery/gallery-4t@1x.jpg 1x, ./images/gallery/gallery-4t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./images/gallery/gallery-4m@1x.jpg 1x, ./images/gallery/gallery-4m@2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img src="./images/gallery/gallery-4d@1x.jpg" alt="edging" />
+            </picture>              
           </li>
         </ul>
       </div>
