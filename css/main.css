@@ -27,24 +27,24 @@ img {
   max-width: 100%;
 }
 
-.container {
+.container, .header {
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 480px) {
-  .container {
+  .container, .header {
     width: 480px;
     padding: 0 31px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .container, .header {
     width: 768px;
     padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .container, .header {
     width: 1200px;
     padding: 0 15px;
   }
@@ -453,7 +453,7 @@ img {
 }
 .logo {
   width: 70px;
-  height: 55px;
+  height: 56px;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -478,7 +478,8 @@ img {
 }
 
 .header {
-  position: relative;
+  height: 56px;
+  position: absolute;
   top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -539,38 +540,44 @@ img {
     display: none;
   }
 }
-.hero {
-  position: relative;
-  top: 0;
-  left: 0;
-  background-image: url(../images/hero/hero-bg1d@1x.jpg);
+.hero-bg {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
-  .hero {
+  .hero-bg {
+    background-image: url(../images/hero/hero-bg1m@1x.jpg);
+    width: 480px;
     height: 580px;
   }
 }
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero-bg {
+    background-image: url(../images/hero/hero-bg1t@1x.jpg);
+    width: 570px;
+    height: 680px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-bg {
+    background-image: url(../images/hero/hero-bg1d@1x.jpg);
+    width: 1070px;
     height: 680px;
   }
 }
 
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .hero-content {
-    padding-left: 30px;
-    padding-top: 210px;
-  }
+.hero-content {
+  padding: 0 31px;
+  width: 100%;
 }
 
 .hero-title {
@@ -1476,13 +1483,13 @@ img {
   background-color: #191c26;
 }
 
-.double-section .container {
+.double-section .container, .double-section .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (max-width: 1199px) {
-  .double-section .container {
+  .double-section .container, .double-section .header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }

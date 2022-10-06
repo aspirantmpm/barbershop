@@ -1,6 +1,6 @@
 .logo {
   width: 70px;
-  height: 55px;
+  height: 56px;
   @media screen and (max-width: 767px) {
     fill: $color-main;
   }
@@ -18,11 +18,13 @@
 }
 
 .header {
-  position: relative;
+  height: 56px;
+  position: absolute;  
   top: 40px;  
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @extend .container;
 }
 
 .header-nav {

@@ -1,35 +1,42 @@
-.hero {
+.hero-bg {
   @media screen and (max-width: 767px) {
+    background-image: url(../images/hero/hero-bg1m@1x.jpg);
+    width: 480px;
     height: 580px;
   }
   @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/hero-bg1t@1x.jpg);
+    width: 570px;
     height: 680px;
   }
-  position: relative;
-  top: 0;
-  left: 0;
-  background-image: url(../images/hero/hero-bg1d@1x.jpg);
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero/hero-bg1d@1x.jpg);
+    width: 1070px;
+    height: 680px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   // text-align: center;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
+// .hero-bg {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
 
-  // width: 1200px;
-  // padding-right: 30px;
-}
+//   // width: 1200px;
+//   // padding-right: 30px;
+// }
 
-.hero-content {
-  @media screen and (max-width: 767px) {
-    padding-left: 30px;
-    padding-top: 210px;
-  }
+.hero-content { 
+   padding: 0 31px;
+  width: 100%;  
 }
 
 .hero-title {
