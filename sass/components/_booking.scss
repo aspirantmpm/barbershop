@@ -9,28 +9,32 @@
   }
 }
 
-.booking {
-  padding-top: 130px;
-  padding-bottom: 130px;
-  // width: 600px;
-  height: 644px;
+.booking { 
+  width: 100%;
+  // height: 644px;
 }
 
 .booking-form {
-  display: flex;  
-  gap: 30px;
+  // display: flex;  
+  // gap: 30px;
   margin-bottom: 44px;
 }
 
+@media screen and (max-width: 767px) {
+    .booking-form__item {
+      margin-bottom: 44px;
+    }
+  }
+
 .booking-form__input {
-  // width: 260px;
+  width: 100%;
   height: 24px;
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: --placeholder-text-color;
+  color: $color-placeholder-text;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid $color-placeholder-text;
@@ -49,7 +53,7 @@
 }
 
 .booking-form__comment {
-  // width: 550px;
+  width: 100%;
   height: 76px;
   font-weight: 600;
   font-size: 11px;
@@ -69,4 +73,11 @@
 
 textarea {
   resize: none;
+}
+
+.btn-light__booking {
+  @extend .btn-light;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,11 +1,46 @@
-.contacts {
-  width: 570px;
-  height: 644px;
-  background-image: url(../images/contacts-bg.svg);
+.contacts-bg {
+  @media screen and (max-width: 767px) {
+    background-image: url(/images/contacts/contacts-m@1x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(/images/contacts/contacts-m@1x.png);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(/images/contacts/contacts-m@1x.png);
+  }
   background-repeat: no-repeat;
-  padding-left: 100px;
-  padding-bottom: 130px;
-  padding-top: 130px;
+  background-position: center;
+}
+
+.contacts {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    height: 496px;
+    padding: 0 31px;
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 449px;
+    padding: 0 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    height: 644px;
+    padding: 0 15px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  
+  
+  // padding-left: 100px;
+  // padding-bottom: 130px;
+  // padding-top: 130px;
 }
 
 .contacts-list {
@@ -46,6 +81,12 @@
   height: 24px;
   fill: $color-free;
 }
+
+@media screen and (max-width: 767px) {
+    .contacts-list__link-transfer {
+      display: none;
+    }
+  }
 
 .contacts__hours-title {
   display: flex;
