@@ -1,14 +1,16 @@
 .logo {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 70px;
+  width: 68px;
   height: 56px;
   @media screen and (max-width: 767px) {
     fill: $color-main;
+    top: 40px;
+    left: 31px;
   }
   @media screen and (min-width: 768px) {
     fill: $color-dark;
+    top: 32px;
+    left: 50px;
   }
   transition-property: fill;
   transition-duration: 250ms;
@@ -23,16 +25,18 @@
 .header {
   height: 40px;
   position: absolute;
-  top: 40px;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
   @media screen and (max-width: 767px) {
-    width: 418px;
+    width: 480px;
     padding: 0 31px;
+    top: 48px;
   }
   @media screen and (min-width: 768px) {
     width: 530px;
+    top: 40px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;

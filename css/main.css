@@ -33,13 +33,13 @@ img {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 418px;
+    width: 480px;
     padding: 0 31px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 690px;
+    width: 768px;
     padding: 0 39px;
   }
 }
@@ -456,9 +456,7 @@ img {
 }
 .logo {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 70px;
+  width: 68px;
   height: 56px;
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -470,11 +468,15 @@ img {
 @media screen and (max-width: 767px) {
   .logo {
     fill: #ffffff;
+    top: 40px;
+    left: 31px;
   }
 }
 @media screen and (min-width: 768px) {
   .logo {
     fill: #303030;
+    top: 32px;
+    left: 50px;
   }
 }
 
@@ -486,7 +488,6 @@ img {
 .header {
   height: 40px;
   position: absolute;
-  top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,13 +500,15 @@ img {
 }
 @media screen and (max-width: 767px) {
   .header {
-    width: 418px;
+    width: 480px;
     padding: 0 31px;
+    top: 48px;
   }
 }
 @media screen and (min-width: 768px) {
   .header {
     width: 530px;
+    top: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -586,6 +589,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -624,9 +631,16 @@ img {
   }
 }
 
-.hero-content {
-  padding: 0 31px;
-  width: 100%;
+@media screen and (max-width: 767px) {
+  .hero-content {
+    padding: 0 31px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-content {
+    padding: 0 31px;
+  }
 }
 
 .hero-title {
@@ -668,11 +682,13 @@ img {
 }
 
 .slider-buttons {
-  position: relative;
-  top: 616px;
-  left: 986px;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .slider-buttons {
+    bottom: 40px;
+    left: 404px;
+  }
 }
 
 .slide-one {
@@ -721,11 +737,10 @@ img {
           transform: translateX(-855px);
 }
 
-.slider-button {
+.slider-button, .slider-button__forward, .slider-button__back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 68px;
   height: 24px;
   font-weight: 600;
   font-size: 11px;
@@ -734,28 +749,25 @@ img {
   color: #ffffff;
   background-color: transparent;
   border: none;
+  border-bottom: 1px solid #ffffff;
   cursor: pointer;
   padding: 0;
-  -webkit-transition-property: color;
-  transition-property: color;
+  -webkit-transition-property: color, border-color;
+  transition-property: color, border-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.slider-button::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: #ffffff;
-  margin-top: 8px;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .slider-button, .slider-button__forward, .slider-button__back {
+    width: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slider-button, .slider-button__forward, .slider-button__back {
+    width: 68px;
+  }
 }
 
 .slider-button__back {
@@ -769,14 +781,12 @@ img {
   text-align: right;
 }
 
-.slider-button:hover,
-.slider-button:focus {
+.slider-button:hover, .slider-button__back:hover, .slider-button__forward:hover,
+.slider-button:focus,
+.slider-button__back:focus,
+.slider-button__forward:focus {
   color: #ff6c00;
-}
-
-.slider-button:hover::after,
-.slider-button:focus::after {
-  background-color: #ff6c00;
+  border-color: #ff6c00;
 }
 
 .slider-pagination {
@@ -1137,7 +1147,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .media-hero {
-    width: 690px;
+    width: 768px;
     padding: 0 39px;
   }
 }

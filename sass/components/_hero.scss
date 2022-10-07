@@ -23,6 +23,7 @@
   // margin-left: auto;
   // margin-right: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,8 +42,13 @@
 // }
 
 .hero-content {
-  padding: 0 31px;
-  width: 100%;
+  @media screen and (max-width: 767px) {
+    padding: 0 31px;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0 31px;    
+  }
 }
 
 .hero-title {
