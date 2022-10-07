@@ -27,24 +27,24 @@ img {
   max-width: 100%;
 }
 
-.container, .header {
+.container {
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 480px) {
-  .container, .header {
-    width: 480px;
+  .container {
+    width: 418px;
     padding: 0 31px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container, .header {
-    width: 768px;
-    padding: 0 15px;
+  .container {
+    width: 690px;
+    padding: 0 39px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container, .header {
+  .container {
     width: 1200px;
     padding: 0 15px;
   }
@@ -88,6 +88,7 @@ img {
 .btn,
 .btn-light,
 .btn-light__booking,
+.btn-light__header,
 .btn-dark,
 .btn-dark__mobile {
   font-weight: 600;
@@ -109,7 +110,7 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-light, .btn-light__booking {
+.btn-light, .btn-light__booking, .btn-light__header {
   color: #ffffff;
 }
 
@@ -121,8 +122,10 @@ img {
 .btn:focus,
 .btn-light:hover,
 .btn-light__booking:hover,
+.btn-light__header:hover,
 .btn-light:focus,
 .btn-light__booking:focus,
+.btn-light__header:focus,
 .btn-dark:hover,
 .btn-dark__mobile:hover,
 .btn-dark:focus,
@@ -306,9 +309,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -336,7 +339,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 70%;
+  width: 100%;
   height: 100%;
   padding-top: 48px;
   padding-right: 40px;
@@ -350,8 +353,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transform: translateX(150%);
-          transform: translateX(150%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -359,8 +362,8 @@ img {
 }
 
 .menu-container.is-open {
-  -webkit-transform: translateX(40%);
-          transform: translateX(40%);
+  -webkit-transform: translateX(35%);
+          transform: translateX(35%);
 }
 
 .mobile-nav {
@@ -452,6 +455,9 @@ img {
   }
 }
 .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 70px;
   height: 56px;
   -webkit-transition-property: fill;
@@ -478,7 +484,7 @@ img {
 }
 
 .header {
-  height: 56px;
+  height: 40px;
   position: absolute;
   top: 40px;
   display: -webkit-box;
@@ -491,6 +497,23 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 767px) {
+  .header {
+    width: 418px;
+    padding: 0 31px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    width: 530px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1200px;
+    padding: 0 15px;
+  }
+}
 
 .header-nav {
   display: -webkit-box;
@@ -498,11 +521,19 @@ img {
   display: flex;
   list-style: none;
   padding-left: 0;
-  margin-right: 310px;
-  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    gap: 30px;
+  }
 }
 
-.header-link {
+.header-link, .header-link__phone {
   text-decoration: none;
   font-weight: 600;
   font-size: 12px;
@@ -520,29 +551,38 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover,
-.header-link:focus {
+.header-link:hover, .header-link__phone:hover,
+.header-link:focus,
+.header-link__phone:focus {
   color: #ff6c00;
 }
 
-.btn-light.head, .head.btn-light__booking {
-  margin-left: 45px;
+@media screen and (max-width: 1199px) {
+  .header-link__phone {
+    display: none;
+  }
+}
+
+.btn-light__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .btn-light__header {
+    margin-left: 45px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .header-nav,
 .header-link,
-.btn-light.head,
-.head.btn-light__booking {
+.header-link__phone,
+.btn-light__header {
     display: none;
   }
 }
 .hero-bg {
-  margin-left: auto;
-  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,12 +592,18 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .hero-bg {
     background-image: url(../images/hero/hero-bg1m@1x.jpg);
     width: 480px;
     height: 580px;
+    position: relative;
+    top: 0;
+    left: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -565,6 +611,9 @@ img {
     background-image: url(../images/hero/hero-bg1t@1x.jpg);
     width: 570px;
     height: 680px;
+    position: relative;
+    top: 0;
+    left: 120px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1073,15 +1122,42 @@ img {
   margin-right: auto;
 }
 
-.media {
-  position: absolute;
-  left: -70px;
-  bottom: 169px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+.media-hero {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .media-hero {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .media-hero {
+    width: 690px;
+    padding: 0 39px;
+  }
+}
+
+.media {
+  position: absolute;
+  background-color: aqua;
+  width: 680px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  rotate: -90deg;
+  top: 680px;
+  left: 39px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .media-links {
@@ -1089,6 +1165,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+  margin-left: 40px;
 }
 
 .media-links::before {
@@ -1483,13 +1560,13 @@ img {
   background-color: #191c26;
 }
 
-.double-section .container, .double-section .header {
+.double-section .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (max-width: 1199px) {
-  .double-section .container, .double-section .header {
+  .double-section .container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }

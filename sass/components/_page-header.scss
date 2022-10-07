@@ -1,4 +1,7 @@
 .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 70px;
   height: 56px;
   @media screen and (max-width: 767px) {
@@ -18,21 +21,35 @@
 }
 
 .header {
-  height: 56px;
-  position: absolute;  
-  top: 40px;  
+  height: 40px;
+  position: absolute;
+  top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @extend .container;
+  @media screen and (max-width: 767px) {
+    width: 418px;
+    padding: 0 31px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 530px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0 15px;
+  }
 }
 
 .header-nav {
   display: flex;
   list-style: none;
   padding-left: 0;
-  margin-right: 310px;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
+  }
 }
 
 .header-link {
@@ -53,15 +70,27 @@
   color: $color-brand;
 }
 
-.btn-light.head {
-  margin-left: 45px;
+.header-link__phone {
+  @extend .header-link;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.btn-light__header {
+  @extend .btn-light;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 45px;
+  }
   display: flex;
 }
 
 @media screen and (max-width: 767px) {
   .header-nav,
   .header-link,
-  .btn-light.head {
+  .btn-light__header {
     display: none;
   }
 }

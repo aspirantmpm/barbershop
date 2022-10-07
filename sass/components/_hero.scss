@@ -3,26 +3,32 @@
     background-image: url(../images/hero/hero-bg1m@1x.jpg);
     width: 480px;
     height: 580px;
+    position: relative;
+    top: 0;
+    left: 0;
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/hero/hero-bg1t@1x.jpg);
     width: 570px;
     height: 680px;
+    position: relative;
+    top: 0;
+    left: 120px;
   }
   @media screen and (min-width: 1200px) {
     background-image: url(../images/hero/hero-bg1d@1x.jpg);
     width: 1070px;
     height: 680px;
   }
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   // text-align: center;
-  // overflow: hidden;
+  justify-content: center;
 }
 
 // .hero-bg {
@@ -34,23 +40,23 @@
 //   // padding-right: 30px;
 // }
 
-.hero-content { 
-   padding: 0 31px;
-  width: 100%;  
+.hero-content {
+  padding: 0 31px;
+  width: 100%;
 }
 
 .hero-title {
   @media screen and (max-width: 1199px) {
     font-size: 48px;
-  line-height: calc(56 / 48);
+    line-height: calc(56 / 48);
   }
   @media screen and (min-width: 1200px) {
     font-size: 72px;
-  line-height: calc(85 / 72);
+    line-height: calc(85 / 72);
   }
   font-family: $font-second;
   font-weight: 700;
-  
+
   letter-spacing: 0.05em;
   color: $color-main;
   margin-bottom: 20px;
@@ -59,13 +65,13 @@
 .hero-subtitle {
   @media screen and (max-width: 767px) {
     font-size: 16px;
-  line-height: calc(26 / 16);
+    line-height: calc(26 / 16);
   }
   @media screen and (min-width: 768px) {
     font-size: 18px;
-  line-height: calc(30 / 18);
+    line-height: calc(30 / 18);
   }
-  font-weight: 400;  
+  font-weight: 400;
   letter-spacing: 0.02em;
   color: $color-text-light;
 }
