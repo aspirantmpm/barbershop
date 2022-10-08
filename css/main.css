@@ -1274,7 +1274,14 @@ img {
   list-style: none;
   margin: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .services-list__item-all {
+    font-size: 12px;
+    line-height: 1.6666666667;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .services-list__item-all {
     font-size: 14px;
     line-height: 1.4285714286;

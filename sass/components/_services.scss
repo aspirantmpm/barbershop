@@ -36,7 +36,12 @@
 }
 
 .services-list__item-all {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    padding: 0;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     font-size: 14px;
     line-height: calc(20 / 14);
     padding: 30px;
