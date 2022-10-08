@@ -1,10 +1,10 @@
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
+  height: 40px;
+  width: 40px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -33,7 +33,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 85%;
   height: 100%;
   padding-top: 48px;
   padding-right: 40px;
@@ -45,7 +45,7 @@
   flex-direction: column;
   // justify-content: space-between;
 
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition: transform 250ms ease-in-out;
 }
 
