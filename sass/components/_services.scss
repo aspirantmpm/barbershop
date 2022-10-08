@@ -14,7 +14,7 @@
   }
   background-repeat: no-repeat;
   background-position: center;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     height: 738px;
   }
   @media screen and (min-width: 768px) {
@@ -36,7 +36,7 @@
 }
 
 .services-list__item-all {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     font-size: 14px;
     line-height: calc(20 / 14);
     padding: 30px;

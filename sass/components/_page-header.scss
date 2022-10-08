@@ -30,9 +30,9 @@
   align-items: center;
   justify-content: space-between;
   @media screen and (max-width: 767px) {
-    width: 480px;
-    padding: 0 31px;
+    max-width: 480px;    
     top: 48px;
+    right: 31px;
   }
   @media screen and (min-width: 768px) {
     width: 530px;
