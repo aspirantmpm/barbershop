@@ -16,6 +16,9 @@
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
   color: $color-dark;
+  @media screen and (max-width: 479px) {
+    flex-direction: column;
+  }
 }
 
 .footer-list::before {
@@ -24,6 +27,9 @@
   height: 1px;
   width: 60px;
   background-color: $color-dark;
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
 }
 
 .footer-copyright {
