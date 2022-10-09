@@ -9,25 +9,40 @@
   }
 }
 
-.booking { 
+.booking {
   width: 100%;
-  // height: 644px;
-}
-
-.booking-form {
-  // display: flex;  
-  // gap: 30px;
-  margin-bottom: 44px;
+  @media screen and (max-width: 767px) {
+    height: 557px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 522px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 644px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .booking-form__item {
-      margin-bottom: 44px;
-    }
+  .booking-form__item {
+    margin-bottom: 44px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .booking-form {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px;
+  }
+}
 
 .booking-form__input {
-  width: 100%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
   height: 24px;
   font-weight: 600;
   font-size: 11px;
@@ -78,6 +93,8 @@ textarea {
 .btn-light__booking {
   @extend .btn-light;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

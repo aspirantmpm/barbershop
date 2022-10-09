@@ -143,9 +143,9 @@
     <!-- About -->
     <section class="section" id="about">
       <div class="container about">
-        <ul class="list about-img">
-          <li class="list-item">
-            <picture class="about-img__item">
+        <ul class="about-img">
+          <li class="about-img__item">
+            <picture>
               <source
                 srcset="./images/about/about-1d@1x.jpg 1x, ./images/about/about-1d@2x.jpg 2x"
                 media="(min-width: 1200px)"
@@ -153,12 +153,12 @@
               <source
                 srcset="./images/about/about-1t@1x.jpg 1x, ./images/about/about-1t@2x.jpg 2x"
                 media="(min-width: 768px)"
-              />              
+              />
               <img src="./images/about/about-1d@1x.jpg" alt="Front shave" />
-            </picture>            
+            </picture>
           </li>
-          <li class="list-item">
-            <picture class="about-img__item">
+          <li class="about-img__item">
+            <picture>
               <source
                 srcset="./images/about/about-2d@1x.jpg 1x, ./images/about/about-2d@2x.jpg 2x"
                 media="(min-width: 1200px)"
@@ -166,9 +166,9 @@
               <source
                 srcset="./images/about/about-2t@1x.jpg 1x, ./images/about/about-2t@2x.jpg 2x"
                 media="(min-width: 768px)"
-              />              
+              />
               <img src="./images/about/about-2d@1x.jpg" alt="Back shave" />
-            </picture>            
+            </picture>
           </li>
         </ul>
         <div class="about-description">
@@ -270,41 +270,38 @@
     <!-- Benefits -->
     <section class="section">
       <div class="container benefits">
-        <div class="benefits-cards">
-          <ul class="benefits-list">
-            <li class="benefits-list__item">
-              <p>
-                <span class="benefits-list__number"
-                  >600<sup><span class="benefits-list__sub">&#43;</span></sup></span
-                ><br /><span class="benefits-list__text">Satisfied customers<br />per day</span>
-              </p>
-            </li>
-
-            <li class="benefits-list__item">
-              <p>
-                <span class="benefits-list__number"
-                  >50<sup><span class="benefits-list__sub">&#43;</span></sup></span
-                ><br /><span class="benefits-list__text">Awards for excellent<br />service</span>
-              </p>
-            </li>
-
-            <li class="benefits-list__item">
-              <p>
-                <span class="benefits-list__number"
-                  >20<sup><span class="benefits-list__sub">&#43;</span></sup></span
-                ><br /><span class="benefits-list__text">Kyiv’s best<br />barbers</span>
-              </p>
-            </li>
-
-            <li class="benefits-list__item">
-              <p>
-                <span class="benefits-list__number"
-                  >100<sup><span class="benefits-list__sub">&#43;</span></sup></span
-                ><br /><span class="benefits-list__text">Gifts for regular<br />customers</span>
-              </p>
-            </li>
-          </ul>
-        </div>
+        <!-- <div class="benefits-cards"> -->
+        <ul class="benefits-list">
+          <li class="benefits-list__item">
+            <p>
+              <span class="benefits-list__number"
+                >600<sup><span class="benefits-list__sub">&#43;</span></sup></span
+              ><br /><span class="benefits-list__text">Satisfied customers<br />per day</span>
+            </p>
+          </li>
+          <li class="benefits-list__item">
+            <p>
+              <span class="benefits-list__number"
+                >50<sup><span class="benefits-list__sub">&#43;</span></sup></span
+              ><br /><span class="benefits-list__text">Awards for excellent<br />service</span>
+            </p>
+          </li>
+          <li class="benefits-list__item">
+            <p>
+              <span class="benefits-list__number"
+                >20<sup><span class="benefits-list__sub">&#43;</span></sup></span
+              ><br /><span class="benefits-list__text">Kyiv’s best<br />barbers</span>
+            </p>
+          </li>
+          <li class="benefits-list__item">
+            <p>
+              <span class="benefits-list__number"
+                >100<sup><span class="benefits-list__sub">&#43;</span></sup></span
+              ><br /><span class="benefits-list__text">Gifts for regular<br />customers</span>
+            </p>
+          </li>
+        </ul>
+        <!-- </div> -->
         <div class="benefits-description">
           <p class="uppertitle">old traditional school</p>
           <h2 class="title-benefits">
@@ -312,8 +309,8 @@
             to us?
           </h2>
           <p class="subtitle-benefits">
-            Only good things are said about us. But it's<br />better to see and feel 1 time than
-            read 10<br />times.
+            Only good things are said about us. But it's<br class="benefits-transfer" />better to
+            see and feel 1 time than read 10<br class="benefits-transfer" />times.
           </p>
         </div>
       </div>
@@ -322,10 +319,10 @@
     <!-- Our barbers -->
     <section class="team section" id="barbers">
       <div class="container">
-        <p class="uppertitle">for true enjoyers of the atmosphere</p>
-        <h2 class="title-dark">Our barbers</h2>
+        <p class="uppertitle__team">for true enjoyers of the atmosphere</p>
+        <h2 class="title-dark__team">Our barbers</h2>
 
-        <ul class="team-list list">
+        <ul class="team-list">
           <li class="team-card">
             <picture class="team-card__img">
               <source
@@ -491,9 +488,9 @@
     <!-- Gallery -->
     <section class="section">
       <div class="container">
-        <p class="uppertitle">in Latin, "barba" means "beard"</p>
+        <p class="gallery-uppertitle">in Latin, "barba" means "beard"</p>
         <h2 class="tittle-dark hidden">Gallery</h2>
-        <ul class="list gallery-list">
+        <ul class="gallery-list">
           <li class="gallery-list__item">
             <picture class="gallery-card__img">
               <source
@@ -604,7 +601,7 @@
 
     <!-- contacts -->
     <div class="double-section" id="contacts">
-      <section>
+      <section >
         <div class="container">
           <div class="booking section">
             <h2 class="title-light">Online-booking</h2>
@@ -659,14 +656,6 @@
                   </a>
                 </li>
                 <li class="contacts-list__item">
-                  <a class="contacts-list__link" href="barbershop@email.com">
-                    <svg class="contacts-list__icon">
-                      <use href="./images/icons.svg#icon-mail-footer"></use>
-                    </svg>
-                    barbershop@email.com
-                  </a>
-                </li>
-                <li class="contacts-list__item">
                   <a class="contacts-list__link" href="tel:+380961111111">
                     <svg class="contacts-list__icon">
                       <use href="./images/icons.svg#icon-phone-footer"></use>
@@ -674,12 +663,22 @@
                     +38 096 111 11 11
                   </a>
                 </li>
+                <li class="contacts-list__item">
+                  <a class="contacts-list__link" href="mailto:barbershop@email.com">
+                    <svg class="contacts-list__icon">
+                      <use href="./images/icons.svg#icon-mail-footer"></use>
+                    </svg>
+                    barbershop@email.com
+                  </a>
+                </li>                
               </ul>
+              <div class="contacts-hours">
+                <p class="contacts-hours__title">working hours</p>
+                <p class="contacts-hours__time">
+                  Every day from <time>09:00</time> to <time>22:00</time>
+                </p>
+              </div>
             </address>
-            <p class="contacts__hours-title">working hours</p>
-            <p class="contacts__hours-time">
-              Every day from <time>09:00</time> to <time>22:00</time>
-            </p>
           </div>
         </div>
       </section>

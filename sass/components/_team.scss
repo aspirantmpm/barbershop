@@ -2,20 +2,35 @@
   color: $color-team-bg;
 }
 
+.title-dark__team {
+  @extend .title-dark;
+  padding-bottom: 44px;
+  padding-left: 120px;
+}
+
+.uppertitle__team {
+  @extend .uppertitle;
+  padding-left: 120px;
+}
+
 .team-list {
   @extend %list;
   gap: 64px;
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    gap: 64px;
+  }
   @media screen and (min-width: 1200px) {
     gap: 30px;
   }
 }
 
 .team-card {
-  background-color: $color-main;  
+  background-color: $color-main;
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 60px)/3);     
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -39,4 +54,3 @@
   letter-spacing: 0.02em;
   color: $color-brand;
 }
-

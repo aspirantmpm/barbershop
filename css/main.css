@@ -1,7 +1,7 @@
 /* fonts */
 /* colors */
 /* others */
-.gallery-list, .team-list, .benefits-list {
+.gallery-list, .team-list, .benefits-list, .about-img {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -134,7 +134,7 @@ img {
   color: #ffffff;
 }
 
-.uppertitle {
+.uppertitle, .gallery-uppertitle, .uppertitle__team {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636363636;
@@ -150,7 +150,7 @@ img {
   padding-bottom: 20px;
 }
 
-.uppertitle::before {
+.uppertitle::before, .gallery-uppertitle::before, .uppertitle__team::before {
   content: "";
   display: block;
   height: 1px;
@@ -159,7 +159,7 @@ img {
   margin-right: 20px;
 }
 
-.title-dark,
+.title-dark, .title-dark__team,
 .title-light {
   font-family: "Raleway";
   font-weight: 700;
@@ -215,7 +215,8 @@ img {
 }
 
 .title-about,
-.title-dark {
+.title-dark,
+.title-dark__team {
   color: #303030;
   padding-bottom: 20px;
 }
@@ -1236,6 +1237,17 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .about-img__item {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-img__item {
+    width: 270px;
+  }
+}
+
 .about-description {
   padding-left: 30px;
 }
@@ -1454,6 +1466,17 @@ img {
     gap: 20px;
   }
 }
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    width: 450px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    width: 370px;
+  }
+}
 
 .benefits-list__item {
   height: 133px;
@@ -1523,11 +1546,27 @@ img {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-transfer {
+    display: none;
   }
 }
 
 .team {
   color: #f7f7f7;
+}
+
+.title-dark__team {
+  padding-bottom: 44px;
+  padding-left: 120px;
+}
+
+.uppertitle__team {
+  padding-left: 120px;
 }
 
 .team-list {
@@ -1537,6 +1576,14 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 64px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team-list {
@@ -1620,6 +1667,17 @@ img {
   fill: #ff6c00;
 }
 
+@media screen and (max-width: 767px) {
+  .gallery-uppertitle {
+    padding-bottom: 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-uppertitle {
+    padding-bottom: 44px;
+  }
+}
+
 .gallery-list {
   gap: 30px;
   display: -webkit-box;
@@ -1648,9 +1706,20 @@ img {
 .booking {
   width: 100%;
 }
-
-.booking-form {
-  margin-bottom: 44px;
+@media screen and (max-width: 767px) {
+  .booking {
+    height: 557px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .booking {
+    height: 522px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking {
+    height: 644px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1658,8 +1727,16 @@ img {
     margin-bottom: 44px;
   }
 }
+@media screen and (min-width: 768px) {
+  .booking-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px;
+  }
+}
 .booking-form__input {
-  width: 100%;
   height: 24px;
   font-weight: 600;
   font-size: 11px;
@@ -1677,6 +1754,16 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .booking-form__input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .booking-form__input {
+    width: 330px;
+  }
 }
 
 .booking-form__input:focus,
@@ -1715,8 +1802,12 @@ textarea {
 
 .btn-light__booking {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .btn-light__booking {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .contacts-bg {
@@ -1730,12 +1821,24 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .contacts-bg {
-    background-image: url(/images/contacts/contacts-m@1x.png);
+    background-image: url(/images/contacts/contacts-t@1x.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts-bg {
-    background-image: url(/images/contacts/contacts-m@1x.png);
+    background-image: url(/images/contacts/contacts-d@1x.png);
+  }
+}
+
+.contacts-adress {
+  font-style: normal;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 44px;
   }
 }
 
@@ -1743,9 +1846,9 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .contacts {
-    width: 480px;
+    max-width: 480px;
     height: 496px;
     padding: 0 31px;
     padding-top: 84px;
@@ -1756,7 +1859,7 @@ textarea {
   .contacts {
     width: 768px;
     height: 449px;
-    padding: 0 15px;
+    padding: 0 39px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -1775,7 +1878,11 @@ textarea {
   margin: 0;
   padding-left: 0;
   list-style: none;
-  padding-bottom: 70px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list {
+    width: 330px;
+  }
 }
 
 .contacts-list__item:not(:last-child) {
@@ -1786,7 +1893,6 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-style: normal;
   font-size: 18px;
   line-height: 1.6666666667;
   letter-spacing: 0.02em;
@@ -1820,7 +1926,7 @@ textarea {
     display: none;
   }
 }
-.contacts__hours-title {
+.contacts-hours__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1836,7 +1942,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-.contacts__hours-title::before {
+.contacts-hours__title::before {
   content: "";
   display: block;
   height: 1px;
@@ -1845,7 +1951,7 @@ textarea {
   margin-right: 20px;
 }
 
-.contacts__hours-time {
+.contacts-hours__time {
   font-size: 18px;
   line-height: 1.6666666667;
   letter-spacing: 0.02em;
