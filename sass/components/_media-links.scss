@@ -15,7 +15,13 @@
     width: 768px;
     padding: 0 39px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0 15px;
+  }
 }
+
+
 .media {
   position: absolute;
   background-color: aqua;
@@ -25,7 +31,12 @@
   transform-origin: top left;
   rotate: -90deg;
   top: 680px;
-  left: 39px;
+  @media screen and (min-width: 768px) {
+    left: 39px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 15px;
+  }  
   align-items: center;
 }
 
