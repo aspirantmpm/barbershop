@@ -1938,7 +1938,18 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .contacts {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    height: 496px;
+    padding: 0 31px;
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+}
+@media screen and (min-width: 480px) {
   .contacts {
     margin-left: auto;
     margin-right: auto;
