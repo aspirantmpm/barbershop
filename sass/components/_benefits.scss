@@ -18,6 +18,7 @@
 // }
 
 .benefits-list {
+  @extend %list;
   flex-wrap: wrap;
   @media screen and (max-width: 479px) {
     justify-content: center;

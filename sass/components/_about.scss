@@ -6,13 +6,25 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
   gap: 30px;
 }
-  
+
+.about-description {
+  padding-left: 30px;
+}
+
 .about-text {
   font-size: 14px;
   line-height: calc(26 / 14);
   letter-spacing: 0.02em;
   color: $color-text-dark;
-  padding-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 77px;
+  }
 }

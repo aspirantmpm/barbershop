@@ -1,7 +1,7 @@
 /* fonts */
 /* colors */
 /* others */
-.gallery-list, .team-list {
+.gallery-list, .team-list, .benefits-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -24,7 +24,6 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
 }
 
 .container {
@@ -1195,13 +1194,34 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 1199px) {
+  .about-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.about-description {
+  padding-left: 30px;
+}
 
 .about-text {
   font-size: 14px;
   line-height: 1.8571428571;
   letter-spacing: 0.02em;
   color: #555555;
-  padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .about-text {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .about-text {
+    padding-bottom: 77px;
+  }
 }
 
 .services-img {
@@ -1234,7 +1254,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .services {
-    height: 768px;
+    height: 856px;
   }
 }
 @media screen and (min-width: 1200px) {

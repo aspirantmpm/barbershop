@@ -144,8 +144,32 @@
     <section class="section" id="about">
       <div class="container about">
         <ul class="list about-img">
-          <li class="list-item"><img src="./images/about/about1.jpg" alt="Front shave" /></li>
-          <li class="list-item"><img src="./images/about/about2.jpg" alt="Back shave" /></li>
+          <li class="list-item">
+            <picture class="about-img__item">
+              <source
+                srcset="./images/about/about-1d@1x.jpg 1x, ./images/about/about-1d@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/about/about-1t@1x.jpg 1x, ./images/about/about-1t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />              
+              <img src="./images/about/about-1d@1x.jpg" alt="Front shave" />
+            </picture>            
+          </li>
+          <li class="list-item">
+            <picture class="about-img__item">
+              <source
+                srcset="./images/about/about-2d@1x.jpg 1x, ./images/about/about-2d@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/about/about-2t@1x.jpg 1x, ./images/about/about-2t@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />              
+              <img src="./images/about/about-2d@1x.jpg" alt="Back shave" />
+            </picture>            
+          </li>
         </ul>
         <div class="about-description">
           <p class="uppertitle">ABOUT</p>
@@ -247,7 +271,7 @@
     <section class="section">
       <div class="container benefits">
         <div class="benefits-cards">
-          <ul class="list benefits-list">
+          <ul class="benefits-list">
             <li class="benefits-list__item">
               <p>
                 <span class="benefits-list__number"
