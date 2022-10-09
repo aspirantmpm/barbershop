@@ -79,21 +79,23 @@
   // height: 240px;
 }
 
-.services-list__left {
-  background: $gradient-left-list;
+// .services-list__left {
+//   background: $gradient-left-list;
   
-}
-.services-list__right {
-  padding: 0 30px 30px 30px;
-  background: $gradient-right-list;
-}
+// }
+// .services-list__right {
+//   padding: 0 30px 30px 30px;
+//   background: $gradient-right-list;
+// }
 
 @media screen and (min-width: 1200px) {
   .services-list__left {
     background: $gradient-left-list;
+    width: 585px;
   }
   .services-list__right {
     background: $gradient-right-list;
+    width: 585px;
   }
 }
 

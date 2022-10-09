@@ -1287,8 +1287,16 @@ img {
   }
 }
 
-.about-description {
-  padding-left: 30px;
+@media screen and (min-width: 768px) {
+  .about-description {
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-description {
+    padding-left: 64px;
+    width: 564px;
+  }
 }
 
 .about-text {
@@ -1305,6 +1313,11 @@ img {
 @media screen and (max-width: 1199px) {
   .about-text {
     padding-bottom: 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-text {
+    padding-bottom: 40px;
   }
 }
 
@@ -1418,25 +1431,16 @@ img {
   }
 }
 
-.services-list__left {
-  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
-
-.services-list__right {
-  padding: 0 30px 30px 30px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
-
 @media screen and (min-width: 1200px) {
   .services-list__left {
     background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    width: 585px;
   }
   .services-list__right {
     background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    width: 585px;
   }
 }
 .services-list__item {
@@ -1513,7 +1517,12 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .benefits-list {
-    width: 370px;
+    width: 450px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1588,6 +1597,12 @@ img {
     width: 500px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .benefits-description {
+    width: 500px;
+    margin-right: auto;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .benefits-transfer {
@@ -1599,13 +1614,17 @@ img {
   color: #f7f7f7;
 }
 
-.title-dark__team {
-  padding-bottom: 44px;
-  padding-left: 120px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .title-dark__team {
+    padding-bottom: 44px;
+    padding-left: 120px;
+  }
 }
 
-.uppertitle__team {
-  padding-left: 120px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .uppertitle__team {
+    padding-left: 120px;
+  }
 }
 
 .team-list {
@@ -1726,38 +1745,58 @@ img {
       flex-wrap: wrap;
 }
 
-.double-section {
+.double-section__bg {
   background-color: #191c26;
 }
 
-.double-section .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.double-section {
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 1199px) {
-  .double-section .container {
+  .double-section {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .double-section {
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-.booking {
-  width: 100%;
-}
 @media screen and (max-width: 767px) {
   .booking {
-    height: 557px;
+    height: 100%;
+    width: 480px;
+    padding: 84px 31px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .booking {
     height: 522px;
+    width: 768px;
+    padding: 100px 39px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .booking {
     height: 644px;
+    width: 585px;
+    padding: 130px 0;
   }
 }
 
@@ -1804,6 +1843,11 @@ img {
     width: 330px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .booking-form__input {
+    width: 270px;
+  }
+}
 
 .booking-form__input:focus,
 .booking-form__comment:focus {
@@ -1814,7 +1858,6 @@ img {
 }
 
 .booking-form__comment {
-  width: 100%;
   height: 76px;
   font-weight: 600;
   font-size: 11px;
@@ -1833,6 +1876,16 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1199px) {
+  .booking-form__comment {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking-form__comment {
+    width: 570px;
+  }
 }
 
 textarea {
@@ -1856,11 +1909,15 @@ textarea {
 @media screen and (max-width: 767px) {
   .contacts-bg {
     background-image: url(/images/contacts/contacts-m@1x.png);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .contacts-bg {
     background-image: url(/images/contacts/contacts-t@1x.png);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1881,13 +1938,11 @@ textarea {
   }
 }
 
-.contacts {
-  margin-left: auto;
-  margin-right: auto;
-}
 @media screen and (max-width: 767px) {
   .contacts {
-    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
     height: 496px;
     padding: 0 31px;
     padding-top: 84px;
@@ -1896,6 +1951,8 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .contacts {
+    margin-left: auto;
+    margin-right: auto;
     width: 768px;
     height: 449px;
     padding: 0 39px;
@@ -1905,11 +1962,12 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    width: 1200px;
+    width: 585px;
     height: 644px;
     padding: 0 15px;
     padding-top: 130px;
     padding-bottom: 130px;
+    padding-left: 100px;
   }
 }
 
@@ -1918,9 +1976,19 @@ textarea {
   padding-left: 0;
   list-style: none;
 }
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    padding-bottom: 44px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-list {
     width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    padding-bottom: 70px;
   }
 }
 

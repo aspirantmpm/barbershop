@@ -23,7 +23,14 @@
 }
 
 .about-description {
-  padding-left: 30px;
+  @media screen and (min-width: 768px) {
+    padding-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 64px;
+    width: 564px;
+  }
+  
 }
 
 .about-text {
@@ -36,5 +43,8 @@
   }
   @media screen and (max-width: 1199px) {
     padding-bottom: 77px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 40px;
   }
 }

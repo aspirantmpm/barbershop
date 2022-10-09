@@ -4,13 +4,17 @@
 
 .title-dark__team {
   @extend .title-dark;
-  padding-bottom: 44px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 44px;
   padding-left: 120px;
+  }  
 }
 
 .uppertitle__team {
   @extend .uppertitle;
-  padding-left: 120px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 120px;
+  }
 }
 
 .team-list {

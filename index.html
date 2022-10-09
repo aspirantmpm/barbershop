@@ -600,88 +600,86 @@
     </section>
 
     <!-- contacts -->
-    <div class="double-section" id="contacts">
-      <section >
-        <div class="container">
-          <div class="booking section">
-            <h2 class="title-light">Online-booking</h2>
-            <div class="booking-form">
-              <div class="booking-form__item">
-                <label class="booking-form__label" for="username"></label>
-                <input
-                  type="text"
-                  class="booking-form__input"
-                  name="username"
-                  id="username"
-                  placeholder="name*"
-                />
-              </div>
-              <div class="booking-form__item">
-                <label class="booking-form__label" for="tel"></label>
-                <input
-                  type="tel"
-                  class="booking-form__input"
-                  name="tel"
-                  id="tel"
-                  placeholder="phone*"
-                />
-              </div>
+    <div class="double-section__bg">
+    <section class="double-section" id="contacts">
+      <div class="booking">
+        <h2 class="title-light">Online-booking</h2>
+        <div class="booking-form">
+          <div class="booking-form__item">
+            <label class="booking-form__label" for="username"></label>
+            <input
+              type="text"
+              class="booking-form__input"
+              name="username"
+              id="username"
+              placeholder="name*"
+            />
+          </div>
+          <div class="booking-form__item">
+            <label class="booking-form__label" for="tel"></label>
+            <input
+              type="tel"
+              class="booking-form__input"
+              name="tel"
+              id="tel"
+              placeholder="phone*"
+            />
+          </div>
+        </div>
+        <label class="booking-form__label" for="comment"></label>
+        <textarea
+          class="booking-form__comment"
+          name="comment"
+          id="comment"
+          placeholder="message"
+        ></textarea>
+        <button class="btn-light__booking" type="button">send</button>
+      </div>
+      <div class="contacts-bg">
+        <div class="contacts section">
+          <h2 class="title-light">Contacts</h2>
+          <address class="contacts-adress">
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <a
+                  class="contacts-list__link"
+                  href="https://goo.gl/maps/r24npt5XV5TZUg2dA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="contacts-list__icon">
+                    <use href="./images/icons.svg#icon-map-pin"></use>
+                  </svg>
+                  st. Vasilkovaya, <br class="contacts-list__link-transfer" />7A Kiev, 08132
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contacts-list__link" href="tel:+380961111111">
+                  <svg class="contacts-list__icon">
+                    <use href="./images/icons.svg#icon-phone-footer"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="contacts-list__item">
+                <a class="contacts-list__link" href="mailto:barbershop@email.com">
+                  <svg class="contacts-list__icon">
+                    <use href="./images/icons.svg#icon-mail-footer"></use>
+                  </svg>
+                  barbershop@email.com
+                </a>
+              </li>
+            </ul>
+            <div class="contacts-hours">
+              <p class="contacts-hours__title">working hours</p>
+              <p class="contacts-hours__time">
+                Every day from <time>09:00</time> to <time>22:00</time>
+              </p>
             </div>
-            <label class="booking-form__label" for="comment"></label>
-            <textarea
-              class="booking-form__comment"
-              name="comment"
-              id="comment"
-              placeholder="message"
-            ></textarea>
-            <button class="btn-light__booking" type="button">send</button>
-          </div>
+          </address>
         </div>
-        <div class="contacts-bg">
-          <div class="contacts section">
-            <h2 class="title-light">Contacts</h2>
-            <address class="contacts-adress">
-              <ul class="contacts-list">
-                <li class="contacts-list__item">
-                  <a
-                    class="contacts-list__link"
-                    href="https://goo.gl/maps/r24npt5XV5TZUg2dA"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <svg class="contacts-list__icon">
-                      <use href="./images/icons.svg#icon-map-pin"></use>
-                    </svg>
-                    st. Vasilkovaya, <br class="contacts-list__link-transfer" />7A Kiev, 08132
-                  </a>
-                </li>
-                <li class="contacts-list__item">
-                  <a class="contacts-list__link" href="tel:+380961111111">
-                    <svg class="contacts-list__icon">
-                      <use href="./images/icons.svg#icon-phone-footer"></use>
-                    </svg>
-                    +38 096 111 11 11
-                  </a>
-                </li>
-                <li class="contacts-list__item">
-                  <a class="contacts-list__link" href="mailto:barbershop@email.com">
-                    <svg class="contacts-list__icon">
-                      <use href="./images/icons.svg#icon-mail-footer"></use>
-                    </svg>
-                    barbershop@email.com
-                  </a>
-                </li>                
-              </ul>
-              <div class="contacts-hours">
-                <p class="contacts-hours__title">working hours</p>
-                <p class="contacts-hours__time">
-                  Every day from <time>09:00</time> to <time>22:00</time>
-                </p>
-              </div>
-            </address>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
     </div>
 
     <footer>

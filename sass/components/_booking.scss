@@ -1,24 +1,40 @@
-.double-section {
+.double-section__bg {
   background-color: $color-contacts-bg;
 }
 
-.double-section .container {
-  display: flex;
+.double-section {
+  margin-left: auto;
+  margin-right: auto;  
   @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
   }
 }
 
 .booking {
-  width: 100%;
   @media screen and (max-width: 767px) {
-    height: 557px;
+    height: 100%;
+    width: 480px;
+    padding: 84px 31px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 768px) {
     height: 522px;
+    width: 768px;
+    padding: 100px 39px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {    
     height: 644px;
+    width: 585px;
+    padding: 130px 0;
   }
 }
 
@@ -42,6 +58,9 @@
   }
   @media screen and (min-width: 768px) {
     width: 330px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
   height: 24px;
   font-weight: 600;
@@ -68,7 +87,13 @@
 }
 
 .booking-form__comment {
-  width: 100%;
+  
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
   height: 76px;
   font-weight: 600;
   font-size: 11px;
