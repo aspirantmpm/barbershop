@@ -32,11 +32,11 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
-@media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     max-width: calc(100% - 30px);
     height: 609px;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     width: 450px;
     height: 609px;
   }
@@ -184,7 +184,7 @@
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
@@ -197,16 +197,16 @@
   align-items: center;
   @media screen and (max-width: 767px) {
     font-size: 8px;
-  line-height: calc(16 / 8);
+    line-height: calc(16 / 8);
   }
   @media screen and (min-width: 768px) {
     font-size: 10px;
-  line-height: calc(20 / 10);
+    line-height: calc(20 / 10);
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-  line-height: calc(24 / 14);
-  }  
+    line-height: calc(24 / 14);
+  }
   letter-spacing: 0.03em;
   color: $color-main;
 }
@@ -254,6 +254,3 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
