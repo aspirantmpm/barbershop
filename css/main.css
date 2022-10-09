@@ -1942,7 +1942,7 @@ textarea {
   .contacts {
     margin-left: auto;
     margin-right: auto;
-    width: 480px;
+    max-width: 480px;
     height: 496px;
     padding: 0 31px;
     padding-top: 84px;
