@@ -1331,17 +1331,17 @@ img {
 }
 @media screen and (max-width: 767px) {
   .services {
-    background-image: url(/images/services/services-m@1x.png);
+    background-image: url(../images/services/services-m@1x.png);
   }
 }
 @media screen and (min-width: 768px) {
   .services {
-    background-image: url(/images/services/services-t@1x.png);
+    background-image: url(../images/services/services-t@1x.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .services {
-    background-image: url(/images/services/services-d@1x.png);
+    background-image: url(../images/services/services-d@1x.png);
   }
 }
 @media screen and (max-width: 767px) {
@@ -1908,21 +1908,21 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .contacts-bg {
-    background-image: url(/images/contacts/contacts-m@1x.png);
+    background-image: url(../images/contacts/contacts-m@1x.png);
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .contacts-bg {
-    background-image: url(/images/contacts/contacts-t@1x.png);
+    background-image: url(../images/contacts/contacts-t@1x.png);
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts-bg {
-    background-image: url(/images/contacts/contacts-d@1x.png);
+    background-image: url(../images/contacts/contacts-d@1x.png);
   }
 }
 

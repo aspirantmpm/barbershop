@@ -1,16 +1,16 @@
 .contacts-bg {
   @media screen and (max-width: 767px) {
-    background-image: url(/images/contacts/contacts-m@1x.png);
+    background-image: url(../images/contacts/contacts-m@1x.png);
     margin-left: auto;
     margin-right: auto;
   }
   @media screen and (min-width: 768px) {
-    background-image: url(/images/contacts/contacts-t@1x.png);
+    background-image: url(../images/contacts/contacts-t@1x.png);
     margin-left: auto;
     margin-right: auto;
   }
   @media screen and (min-width: 1200px) {
-    background-image: url(/images/contacts/contacts-d@1x.png);
+    background-image: url(../images/contacts/contacts-d@1x.png);
   }
   background-repeat: no-repeat;
   background-position: center;
