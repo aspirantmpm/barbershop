@@ -24,7 +24,8 @@
 
 .media {
   position: absolute;
-  background-color: aqua;
+  background-color: $color-team-bg;
+  box-shadow: $shadow-benefits;
   width: 680px;
   height: 90px;
   display: flex;
